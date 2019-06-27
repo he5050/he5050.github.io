@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://he5050.github.io</id>
     <title>懒懒的小博客</title>
-    <updated>2019-06-27T02:49:52.118Z</updated>
+    <updated>2019-06-27T02:50:35.929Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://he5050.github.io"/>
     <link rel="self" href="https://he5050.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>日常记录</subtitle>
     <logo>https://he5050.github.io/images/avatar.png</logo>
     <icon>https://he5050.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 懒懒的小博客</rights>
