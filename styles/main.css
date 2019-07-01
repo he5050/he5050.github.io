@@ -386,7 +386,7 @@ a img {
 .archive .main,
 .search .main {
   width: 88.89%;
-  max-width: 1280px;
+  max-width: 1100;
 }
 .blog #breadcrumbs,
 .archive #breadcrumbs,
@@ -394,7 +394,7 @@ a img {
   width: 100%;
 }
 .entry {
-  max-width: 1280px;
+  max-width: 1100;
 }
 .infinite-loader,
 #infinite-handle {
@@ -403,7 +403,7 @@ a img {
 #breadcrumbs {
   margin: 1.5em auto;
   width: 88.88%;
-  max-width: 1280px;
+  max-width: 1100;
   color: #aaaaaa;
 }
 #breadcrumbs a {
@@ -426,7 +426,7 @@ a img {
 }
 .site-header .container {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1100;
 }
 .site-header:after {
   content: ".";
@@ -1283,7 +1283,7 @@ a img {
 .comments {
   background: #f1f3f5;
   padding-bottom: 3em;
-  max-width: 1280px;
+  max-width: 1100;
 }
 .comments-number {
   padding: 1.5em 0;
@@ -1685,7 +1685,7 @@ li.pingback:first-child {
 }
 .page-template-full-width .entry-container {
   padding: 0 5%;
-  max-width: 1280px;
+  max-width: 1100;
   margin: 0 auto;
 }
 /* 900px */
@@ -1883,7 +1883,7 @@ li.pingback:first-child {
 }
 .top-navigation .container {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1100;
 }
 .top-navigation .container:after {
   content: ".";
@@ -2597,7 +2597,7 @@ li.pingback:first-child {
 #disqus_thread {
   background: white;
   padding: 1.5em 5.55%;
-  max-width: 1280px;
+  max-width: 1100;
 }
 /* 600px */
 @media all and (min-width: 37.5em) {
