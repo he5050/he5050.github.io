@@ -102,6 +102,9 @@ body {
   padding-bottom: 1.5em;
   margin: 0 auto;
 }
+.loop-container {
+  position: relative;
+}
 .loop-container:after {
   content: ".";
   display: block;
