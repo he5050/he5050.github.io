@@ -465,9 +465,14 @@ window.addEventListener("click", function(e) {
         fireworks.push(firework);
 });
 ScrollReveal({
-        scale: 0.75,
-        duration: 1000,
-        reset: true
+        opacity: 0.8,
+        interval: 300,
+        easing: "cubic-bezier(0.5, 0, 0, 1)",
+        delay: 100,
+        scale: 0.85,
+        duration: 500,
+        reset: true,
+        origin: "top"
 });
 var nodeList = document.querySelectorAll(".loop-container");
 ScrollReveal().reveal(nodeList);
