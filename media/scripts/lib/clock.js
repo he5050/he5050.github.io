@@ -76,6 +76,7 @@
                 var _timer = new Date();
                 var bTimer = _timer.getTime();
                 var animate = function() {
+                        if ($("#utility-clock").length < 1) return;
                         var now = new Date();
                         //处理Date对象，以服务器时间为准
                         if (!isSetTimer && _info.timer) {
