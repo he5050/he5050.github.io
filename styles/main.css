@@ -129,7 +129,7 @@ body {
 .clock-warp > .time-warp > div {
   line-height: 20px;
 }
-.clock-warp > .time-warp > div > span {
+.clock-warp > .time-warp > div > .title {
   color: #222;
   font-weight: 700;
 }

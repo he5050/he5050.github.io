@@ -104,8 +104,50 @@
 })();
 var a = calendar.solar2lunar();
 console.log(a);
-// var ip = returnCitySN["cip"];
-// console.log(returnCitySN);
+$(".day-content").text(
+        a.cYear +
+                "年" +
+                a.cMonth +
+                "月" +
+                a.cDay +
+                "日" +
+                " (" +
+                a.ncWeek +
+                " " +
+                a.astro +
+                ")"
+);
+$(".lunar-content").text(
+        a.IMonthCn +
+                a.IDayCn +
+                "日" +
+                " (" +
+                a.gzYear +
+                "年" +
+                a.gzMonth +
+                "月" +
+                a.gzDay +
+                "日, " +
+                a.Animal +
+                "年 )"
+);
+
+var ip = returnCitySN["cip"];
+console.log(returnCitySN);
+var cityName = returnCitySN["cname"];
+
+if (cityName.split("省").length > 1) {
+        cityName = cityName.split("省")[1].split("市")[0];
+}
+$.ajax({
+        type: "post",
+        url: "https://www.apiopen.top/weatherApi?city=" + cityName,
+        success: function(data) {
+                if (data.code == 200 && data.data.ganmao) {
+                        $(".tips-content").text(data.data.ganmao);
+                }
+        }
+});
 $.ajax({
         type: "get",
         url:
