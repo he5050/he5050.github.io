@@ -464,3 +464,4 @@ window.addEventListener("click", function(e) {
         firework.vy = 0;
         fireworks.push(firework);
 });
+Pace.start();
