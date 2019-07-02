@@ -537,6 +537,20 @@ a img {
 .search .sticky {
   background: white;
 }
+.blog {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.blog .canvas {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #222;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 .blog .main,
 .archive .main,
 .search .main {
@@ -1618,6 +1632,12 @@ li.pingback:first-child {
   padding-top: 3em;
   overflow: hidden;
   clear: both;
+}
+.site-footer .site-header,
+.site-footer .site-description,
+.site-footer .menu-footer,
+.site-footer .social-media-icons {
+  visibility: hidden;
 }
 .site-footer a {
   color: #8c8c8c;
