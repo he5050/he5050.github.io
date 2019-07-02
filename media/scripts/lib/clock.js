@@ -472,7 +472,7 @@ const options = {
         scale: 0.85,
         duration: 600,
         reset: true,
-        origin: "left"
+        origin: "top"
 };
 ScrollReveal(options);
 var nodeList = document.querySelectorAll(".loop-container");
