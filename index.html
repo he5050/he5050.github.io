@@ -6,7 +6,7 @@
 <meta name="robots" content="all,follow">
 <meta name="googlebot" content="index,follow,snippet,archive">
 <title>懒懒的小博客</title>
-<link rel="shortcut icon" href="https://he5050.github.io/favicon.ico?v=1561967866971">
+<link rel="shortcut icon" href="https://he5050.github.io/favicon.ico?v=1562037472442">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="https://he5050.github.io/styles/main.css" type='text/css' media='all'>
 
@@ -73,6 +73,40 @@
 
 
         <div id="main" class="main" role="main">
+  <div class="clock-warp" id="clock-custom">
+    <div class="time-warp">
+      <div class="city-warp"><span>日期:</span> &nbsp; &nbsp;2019年7月2日 (星期二)</div>
+      <div class="time-warp"><span>农历:</span> &nbsp; &nbsp;五月十五 (己亥年庚午月庚子日)</div>
+      <div class="tips-warp"><span>提醒:</span> &nbsp; &nbsp;各项气象条件适宜，发生感冒机率较低。但请避免长期处于空调房间中，以防感冒。</div>
+    </div>
+    <div class="clock-box">
+      <div class="fill">
+        <div class="reference"></div>
+        <div class="clock" id="utility-clock">
+          <div class="centre">
+            <div class="dynamic"></div>
+            <div class="expand round circle-1"></div>
+            <div class="anchor hour">
+              <div class="element thin-hand"></div>
+              <div class="element fat-hand"></div>
+            </div>
+            <div class="anchor minute">
+              <div class="element thin-hand"></div>
+              <div class="element fat-hand minute-hand"></div>
+            </div>
+            <div class="anchor second">
+              <div class="element second-hand"></div>
+            </div>
+            <div class="expand round circle-2"></div>
+            <div class="expand round circle-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="weather-warp">
+    <div id="weather-view-he"></div>
+  </div>
   <h1 class="screen-reader-text">Posts</h1>
   
   <div id="loop-container" class="loop-container">
@@ -88,13 +122,13 @@
       
       <div class="excerpt-container">
         <div class="excerpt-meta">
-          <span class="date">  · 2019-07-01 Mon ·</span>
-            
-                <span> / </span>
-                <span class="category">
-                        <a href="https://he5050.github.io/tag/bz9TsyZp7">自己</a>
-                </span>
-            
+          <span class="date"> · 2019-07-01 Mon ·</span>
+          
+          <span> / </span>
+          <span class="category">
+            <a href="https://he5050.github.io/tag/bz9TsyZp7">自己</a>
+          </span>
+          
 
         </div>
         <div class='excerpt-header'>
@@ -104,7 +138,7 @@
         </div>
         <div class='excerpt-content'>
           <article>
-              <p>这是一场漫长的一个人的搏斗
+            <p>这是一场漫长的一个人的搏斗
 没有人知道他是否会倒下，
 一次懒惰都足以击垮他</p>
 
@@ -127,13 +161,13 @@
       
       <div class="excerpt-container">
         <div class="excerpt-meta">
-          <span class="date">  · 2019-06-27 Thu ·</span>
-            
-                <span> / </span>
-                <span class="category">
-                        <a href="https://he5050.github.io/tag/GSsXzhni7">补漏</a>
-                </span>
-            
+          <span class="date"> · 2019-06-27 Thu ·</span>
+          
+          <span> / </span>
+          <span class="category">
+            <a href="https://he5050.github.io/tag/GSsXzhni7">补漏</a>
+          </span>
+          
 
         </div>
         <div class='excerpt-header'>
@@ -143,7 +177,7 @@
         </div>
         <div class='excerpt-content'>
           <article>
-              <p>好记性不如烂笔头，把平时遗落的点记录一下<!--more--></p>
+            <p>好记性不如烂笔头，把平时遗落的点记录一下<!--more--></p>
 
           </article>
         </div>
@@ -152,6 +186,7 @@
   </div>
   
 </div>
+
 
         <nav class="navigation pagination" role="navigation">
     <h2 class="screen-reader-text">Posts navigation</h2>
@@ -200,16 +235,25 @@
         
     </ul>
     <div class="design-credit">
-        <p>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>|日期</p>
+        <p><span class="footer-tips">天赋决定了你能达到的上限，努力程度决定了你能达到的下限。以绝大多数人的努力程度之低，远远没有达到要去拼天赋的地步。</span></p>
     </div>
 </footer>
 <script>
+    WIDGET = { ID: 'uN0i1Pg6Tc' };
     hljs.initHighlightingOnLoad()
+    window._info = {
+
+        timer: new Date().getTime(),
+
+    };
 </script>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
 <script src="https://he5050.github.io/media/scripts/lib/jquery.min.js"></script>
 <script src="https://he5050.github.io/media/scripts/lib/jquerymigrate.js"></script>
 <script src="https://he5050.github.io/media/scripts/lib/production.min.js"></script>
+<script src="https://he5050.github.io/media/scripts/lib/calendar.js"></script>
 <script src="https://he5050.github.io/media/scripts/lib/clock.js"></script>
+<script type="text/javascript" src="https://apip.weatherdt.com/view/static/js/r.js?v=1111"></script>
 
       </div>
   </body>

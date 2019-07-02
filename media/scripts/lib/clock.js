@@ -1,7 +1,7 @@
 /**
  *html5时钟侧边栏
  */
-$(function() {
+(function() {
         var clock = $("#utility-clock");
         utilityClock(clock);
         window.addEventListener("resize", function() {
@@ -100,5 +100,22 @@ $(function() {
                 for (var i = 1; i <= 60; i++) minute(i);
                 for (var i = 1; i <= 12; i++) hour(i);
                 animate();
+        }
+})();
+var a = calendar.solar2lunar();
+console.log(a);
+// var ip = returnCitySN["cip"];
+// console.log(returnCitySN);
+$.ajax({
+        type: "get",
+        url:
+                "https://blog.jjonline.cn/motto.php?type=random&_=" +
+                new Date().getTime(),
+        dataType: "jsonp",
+        success: function(data) {
+                console.log(data);
+                if (data.content) {
+                        $(".footer-tips").text(data.content);
+                }
         }
 });
