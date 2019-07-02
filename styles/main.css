@@ -537,12 +537,14 @@ a img {
 .search .sticky {
   background: white;
 }
-.blog {
+.blog,
+.post-template-default {
   position: relative;
   width: 100%;
   height: 100%;
 }
-.blog .canvas {
+.blog .canvas,
+.post-template-default .canvas {
   position: absolute;
   width: 100%;
   min-height: 100vh;
