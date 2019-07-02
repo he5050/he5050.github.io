@@ -456,7 +456,7 @@ window.addEventListener("resize", function() {
         gl.uniform2f(webgl.resUniformLoc, w, h);
 });
 window.addEventListener("click", function(e) {
-        console.log("点击了", e.clientX, e.clientY);
+        console.log("点击了", e, e.clientX, e.clientY);
         var firework = new Firework();
         firework.x = e.clientX;
         firework.y = e.clientY;
