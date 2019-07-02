@@ -464,4 +464,10 @@ window.addEventListener("click", function(e) {
         firework.vy = 0;
         fireworks.push(firework);
 });
-Pace.start();
+ScrollReveal({
+        scale: 0.75,
+        duration: 1000,
+        reset: true
+});
+var nodeList = document.querySelectorAll(".loop-container");
+ScrollReveal().reveal(nodeList);
