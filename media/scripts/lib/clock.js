@@ -477,3 +477,33 @@ const options = {
 ScrollReveal(options);
 var nodeList = document.querySelectorAll(".loop-container");
 ScrollReveal().reveal(nodeList);
+var throttle = function(action, delay) {
+        var last = 0;
+        return function() {
+                var curr = +new Date();
+                if (curr - last > delay) {
+                        action.apply(this, arguments);
+                        last = curr;
+                }
+        };
+};
+var weather = $(".weather-warp");
+var clock = $(".clock-warp");
+var topH = clock.offset().top;
+window.addEventListener(
+        "scroll",
+        throttle(function() {
+                var scrollTop =
+                        window.pageYOffset ||
+                        document.documentElement.scrollTop ||
+                        document.body.scrollTop;
+                var top = 0;
+                if (scrollTop > top + 10) {
+                        top = scrollTop - topH + 10;
+                }
+                top = top < 0 ? 0 : top;
+                console.log("top的值：", scrollTop, topH, top);
+                weather.css("top", top);
+                clock.css("top", top);
+        }, 100)
+);

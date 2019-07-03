@@ -114,6 +114,7 @@ body {
   top: 0;
   left: -370px;
   width: 340px;
+  transition: all 0.5s;
 }
 .weather-warp > #weather-view-he {
   border: none !important;
@@ -124,6 +125,7 @@ body {
   top: 0;
   right: -370px;
   width: 340px;
+  transition: all 0.5s;
 }
 .clock-warp > .time-warp {
   color: #4a4a4a;
