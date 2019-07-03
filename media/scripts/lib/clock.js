@@ -490,6 +490,7 @@ var throttle = function(action, delay) {
 var weather = $(".weather-warp");
 var clock = $(".clock-warp");
 var topH = clock.offset().top;
+$(".overflow-container .post").css("overflow", "hidden");
 window.addEventListener(
         "scroll",
         throttle(function() {
