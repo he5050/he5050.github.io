@@ -505,5 +505,5 @@ window.addEventListener(
                 console.log("top的值：", scrollTop, topH, top);
                 weather.css("top", top);
                 clock.css("top", top);
-        }, 100)
+        }, 50)
 );
