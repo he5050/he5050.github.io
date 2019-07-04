@@ -489,8 +489,11 @@ var throttle = function(action, delay) {
 };
 var weather = $(".weather-warp");
 var clock = $(".clock-warp");
-var topH = clock.offset().top;
+var topH = clock.offset().top; // 距离顶部的距离
+var clockH = clock.height(); // 侧边栏的高度
 $(".overflow-container .post").css("overflow", "hidden");
+var mainH = $(".main").height();
+var diffTop = mainH - clockH;
 window.addEventListener(
         "scroll",
         throttle(function() {
@@ -502,9 +505,19 @@ window.addEventListener(
                 if (scrollTop > top + 10) {
                         top = scrollTop - topH + 10;
                 }
+                // 判断是否到顶点了
                 top = top < 0 ? 0 : top;
-                console.log("top的值：", scrollTop, topH, top);
+                // 判断是否到底部了
+                top = top > diffTop - 24 ? diffTop - 24 : top;
+                console.log("top的值：", scrollTop, topH, diffTop, top, mainH);
                 weather.css("top", top);
                 clock.css("top", top);
         }, 50)
 );
+window.addEventListener("load", function() {
+        Grade(document.querySelectorAll(".loop-container"), null, function(
+                gradientData
+        ) {
+                console.log(gradientData);
+        });
+});
