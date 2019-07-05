@@ -7,12 +7,12 @@
 <meta name="robots" content="all,follow">
 <meta name="googlebot" content="index,follow,snippet,archive">
 <title>什么是真的体位 | 庵主老衲来也</title>
-<link rel="shortcut icon" href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/favicon.ico?v=1562313489308">
+<link rel="shortcut icon" href="https://he5050.github.io/favicon.ico?v=1562313648436">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
   integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/styles/main.css" type='text/css' media='all'>
+<link rel="stylesheet" href="https://he5050.github.io/styles/main.css" type='text/css' media='all'>
 
-<script src="E:/360MoveData/Users/Administrator/Documents/Gridea/output/media/scripts/lib/scrollreveal.min.js"></script>
+<script src="https://he5050.github.io/media/scripts/lib/scrollreveal.min.js"></script>
 
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
@@ -32,7 +32,7 @@
     <div class="container">
         <div id="title-info" class="title-info">
             <div id='site-title' class='site-title'>
-                <a href="E:/360MoveData/Users/Administrator/Documents/Gridea/output"> 庵主老衲来也 </a>
+                <a href="https://he5050.github.io"> 庵主老衲来也 </a>
             </div>
         </div>
         <button id="toggle-navigation" class="toggle-navigation">
@@ -69,7 +69,7 @@
                     
                     <li id="menu-item"
                         class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                        <a href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/post/xiang-feng-yi-chang-rang-ni-shi-wang-liao//index.html">关于</a>
+                        <a href="https://he5050.github.io/post/xiang-feng-yi-chang-rang-ni-shi-wang-liao/">关于</a>
                     </li>
                     
                     
@@ -135,7 +135,7 @@
             
             <span class="category">
               <span> / </span>
-              <a href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/tag/uBpRcY5-H/index.html">基础</a>
+              <a href="https://he5050.github.io/tag/uBpRcY5-H">基础</a>
             </span>
             
           </div>
@@ -147,7 +147,10 @@
               <article>
                 <p>程序中的所有数在计算机内存中都是以二进制的形式储存的。位运算说穿了，就是直接对整数在内存中的二进制位进行操作。</p>
 <!-- more -->
-<h1 id="位是一个非常长见的运算">位是一个非常长见的运算</h1>
+<h1 id="前言">前言</h1>
+<blockquote>
+<p>从现代计算机中所有的数据二进制的形式存储在设备中。即0、1两种状态，计算机对二进制数据进行的运算(+、-、*、/)都是叫位运算，即将符号位共同参与运算的运算。</p>
+</blockquote>
 <h2 id="1-位运算有哪些">1. 位运算有哪些</h2>
 <table>
 <thead>
@@ -224,7 +227,7 @@ var rIndex = Math.floor((Math.random() * len))
 // 使用位运算的方法
 var rIndex = Math.random() * len | 0
 </code></pre>
-<h2 id="按位异或">按位异或 ^</h2>
+<h2 id="4-按位异或">4. 按位异或 ^</h2>
 <blockquote>
 <p>^运算符跟|类似，但有一点不同的是 如果两个操作位都为1的话，结果产生0。</p>
 <p>1的二进制表示为 0 0 0 0 0 0 1</p>
@@ -253,7 +256,7 @@ togle = toggle ? 0 : 1;
 // 使用位运算的方法：
 toggle ^= 1;
 </code></pre>
-<h2 id="4-按位非~">4. 按位非~</h2>
+<h2 id="5-按位非~">5. 按位非~</h2>
 <blockquote>
 <p>~运算符是对位求反，1变0,0变1，也就是求二进制的反码</p>
 <p>1的二进制表示为 0 0 0 0 0 0 1</p>
@@ -294,7 +297,7 @@ console.log('~~(-2.999): ', ~~(-2.999));   // =&gt; -2
 <blockquote>
 <p>当然话，我这是简单的理解，实现还是按二进制度的位来依次计算的,能过上面的例子，我们不难发现，我们可以用<code>~~9.3434</code>简单的对浮点点进行取整，但是这里没有四舍五入的。</p>
 </blockquote>
-<h2 id="5-左移">5. 左移 &lt;&lt;</h2>
+<h2 id="6-左移">6. 左移 &lt;&lt;</h2>
 <blockquote>
 <p><code>&lt;&lt;</code>运算符使指定值的二进制所有位都左移规定的次数，对于其移动规则只需记住丢弃最高位，0补最低位即按二进制形式把所有的数字向左移动对应的位数，高位移出(舍弃)，低位的空位补零。</p>
 <p>1的二进制表示为 0 0 0 0 0 0 1</p>
@@ -304,7 +307,7 @@ console.log('~~(-2.999): ', ~~(-2.999));   // =&gt; -2
 <pre><code class="language-javascript">2 &lt;&lt; 1 // 4 等价于 2 * 2^1
 2 &lt;&lt; 2 // 8 等价于 2 * 2^2
 </code></pre>
-<h2 id="6-右移">6. 右移 &gt;&gt;</h2>
+<h2 id="7-右移">7. 右移 &gt;&gt;</h2>
 <blockquote>
 <p><code>&gt;&gt;</code>运算符使指定值的二进制所有位都右移规定的次数，对于其移动规则只需记住符号位不变，左边补上符号位即按二进制形式把所有的数字向右移动对应的位数，低位移出(舍弃)，高位的空位补符号位，即正数补零，负数补1。</p>
 <p>1的二进制表示为 0 0 0 0 0 0 1</p>
@@ -315,7 +318,7 @@ console.log('~~(-2.999): ', ~~(-2.999));   // =&gt; -2
 8 &lt;&lt; 2 // 2 等价于 2 / 2^2
 8 &lt;&lt; 3 // 1 等价于 2 / 2^2
 </code></pre>
-<h2 id="7-无符号右移">7. 无符号右移&gt;&gt;&gt;</h2>
+<h2 id="8-无符号右移">8. 无符号右移&gt;&gt;&gt;</h2>
 <blockquote>
 <p><code>&gt;&gt;&gt;</code>运算符忽略了符号位扩展，0补最高位，但是只是对32位和64位的值有意义。
 对于非负数，有符号右移和无符号右移总是返回相同的结果。</p>
@@ -339,16 +342,16 @@ console.log(6.83 &gt;&gt;&gt; 0)   // 6
   <div class="toc-title i-card-title">目录</div>
   <div class="toc-content">
     <ul class="markdownIt-TOC">
-<li><a href="#%E4%BD%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E9%9D%9E%E5%B8%B8%E9%95%BF%E8%A7%81%E7%9A%84%E8%BF%90%E7%AE%97">位是一个非常长见的运算</a>
+<li><a href="#%E5%89%8D%E8%A8%80">前言</a>
 <ul>
 <li><a href="#1-%E4%BD%8D%E8%BF%90%E7%AE%97%E6%9C%89%E5%93%AA%E4%BA%9B">1. 位运算有哪些</a></li>
 <li><a href="#2-%E6%8C%89%E4%BD%8D%E4%B8%8E">2. 按位与 &amp;</a></li>
 <li><a href="#3-%E6%8C%89%E4%BD%8D%E6%88%96">3. 按位或 ｜</a></li>
-<li><a href="#%E6%8C%89%E4%BD%8D%E5%BC%82%E6%88%96">按位异或 ^</a></li>
-<li><a href="#4-%E6%8C%89%E4%BD%8D%E9%9D%9E~">4. 按位非~</a></li>
-<li><a href="#5-%E5%B7%A6%E7%A7%BB">5. 左移 &lt;&lt;</a></li>
-<li><a href="#6-%E5%8F%B3%E7%A7%BB">6. 右移 &gt;&gt;</a></li>
-<li><a href="#7-%E6%97%A0%E7%AC%A6%E5%8F%B7%E5%8F%B3%E7%A7%BB">7. 无符号右移&gt;&gt;&gt;</a></li>
+<li><a href="#4-%E6%8C%89%E4%BD%8D%E5%BC%82%E6%88%96">4. 按位异或 ^</a></li>
+<li><a href="#5-%E6%8C%89%E4%BD%8D%E9%9D%9E~">5. 按位非~</a></li>
+<li><a href="#6-%E5%B7%A6%E7%A7%BB">6. 左移 &lt;&lt;</a></li>
+<li><a href="#7-%E5%8F%B3%E7%A7%BB">7. 右移 &gt;&gt;</a></li>
+<li><a href="#8-%E6%97%A0%E7%AC%A6%E5%8F%B7%E5%8F%B3%E7%A7%BB">8. 无符号右移&gt;&gt;&gt;</a></li>
 </ul>
 </li>
 </ul>
@@ -388,7 +391,7 @@ console.log(6.83 &gt;&gt;&gt; 0)   // 6
             <h2 class="screen-reader-text">Posts navigation</h2>
             <div class="nav-links">
               <a class="next page-numbers" style="font-size:20px"
-                href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/post/ce-shi-6/index.html">下一篇->测试6</a>
+                href="https://he5050.github.io/post/ce-shi-6">下一篇->测试6</a>
             </div>
           </nav>
           
@@ -400,7 +403,7 @@ console.log(6.83 &gt;&gt;&gt; 0)   // 6
     </div>
     <footer id="site-footer" class="site-footer" role="contentinfo">
     <h1 class="site-header">
-        <a href="E:/360MoveData/Users/Administrator/Documents/Gridea/output"> 庵主老衲来也 </a>
+        <a href="https://he5050.github.io"> 庵主老衲来也 </a>
     </h1>
     <p class="site-description" style="font-size:18px">五年前端三年切图@怡红院
 </p>
@@ -452,11 +455,11 @@ console.log(6.83 &gt;&gt;&gt; 0)   // 6
 </script>
 <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
 <script type="text/javascript" src="https://apip.weatherdt.com/view/static/js/r.js?v=1111"></script>
-<script src="E:/360MoveData/Users/Administrator/Documents/Gridea/output/media/scripts/lib/jquery.min.js"></script>
-<script src="E:/360MoveData/Users/Administrator/Documents/Gridea/output/media/scripts/lib/jquerymigrate.js"></script>
-<script src="E:/360MoveData/Users/Administrator/Documents/Gridea/output/media/scripts/lib/production.min.js"></script>
-<script src="E:/360MoveData/Users/Administrator/Documents/Gridea/output/media/scripts/lib/calendar.js"></script>
-<script src="E:/360MoveData/Users/Administrator/Documents/Gridea/output/media/scripts/lib/clock.js"></script>
+<script src="https://he5050.github.io/media/scripts/lib/jquery.min.js"></script>
+<script src="https://he5050.github.io/media/scripts/lib/jquerymigrate.js"></script>
+<script src="https://he5050.github.io/media/scripts/lib/production.min.js"></script>
+<script src="https://he5050.github.io/media/scripts/lib/calendar.js"></script>
+<script src="https://he5050.github.io/media/scripts/lib/clock.js"></script>
 
   </div>
 </body>
