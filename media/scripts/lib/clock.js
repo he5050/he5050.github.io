@@ -514,10 +514,3 @@ window.addEventListener(
                 clock.css("top", top);
         }, 50)
 );
-window.addEventListener("load", function() {
-        Grade(document.querySelectorAll(".loop-container"), null, function(
-                gradientData
-        ) {
-                console.log(gradientData);
-        });
-});
