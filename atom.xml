@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://he5050.github.io</id>
     <title>庵主老衲来也</title>
-    <updated>2019-07-05T06:20:15.694Z</updated>
+    <updated>2019-07-05T07:31:59.291Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://he5050.github.io"/>
     <link rel="self" href="https://he5050.github.io/atom.xml"/>
@@ -12,14 +12,16 @@
     <icon>https://he5050.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 庵主老衲来也</rights>
     <entry>
-        <title type="html"><![CDATA[测试7]]></title>
+        <title type="html"><![CDATA[什么是真的体位]]></title>
         <id>https://he5050.github.io/post/ce-shi-7</id>
         <link href="https://he5050.github.io/post/ce-shi-7">
         </link>
         <updated>2019-07-03T02:56:14.000Z</updated>
-        <summary type="html"><![CDATA[<p>测试7</p>
+        <summary type="html"><![CDATA[<p>测试7
+[TOC]</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>测试7</p>
+        <content type="html"><![CDATA[<p>测试7
+[TOC]</p>
 <!-- more -->
 <h2 id="位运算有哪些">位运算有哪些</h2>
 <table>

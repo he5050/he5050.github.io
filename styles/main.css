@@ -1120,7 +1120,10 @@ a img {
   backface-visibility: hidden;
   margin-bottom: 1.5em;
 }
-.excerpt .featured-image {
+.max-bg {
+  width: 101%;
+}
+.featured-image {
   position: relative;
   height: 0;
   padding-bottom: 50%;
