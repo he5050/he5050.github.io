@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="all,follow">
 <meta name="googlebot" content="index,follow,snippet,archive">
-<title>测试7 | 庵主老衲来了</title>
-<link rel="shortcut icon" href="https://he5050.github.io/favicon.ico?v=1562293193388">
+<title>测试7 | 庵主老衲来也</title>
+<link rel="shortcut icon" href="https://he5050.github.io/favicon.ico?v=1562293468374">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
   integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="https://he5050.github.io/styles/main.css" type='text/css' media='all'>
@@ -32,7 +32,7 @@
     <div class="container">
         <div id="title-info" class="title-info">
             <div id='site-title' class='site-title'>
-                <a href="https://he5050.github.io"> 庵主老衲来了 </a>
+                <a href="https://he5050.github.io"> 庵主老衲来也 </a>
             </div>
         </div>
         <button id="toggle-navigation" class="toggle-navigation">
@@ -40,7 +40,7 @@
         </button>
         <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
         <div id="menu-primary" class="menu-container menu-primary" role="navigation">
-            <p class="site-description">五年前端三年切图
+            <p class="site-description">五年前端三年切图@怡红院
 </p>
             <div class="menu">
                 <ul id="menu-primary-items" class="menu-primary-items">
@@ -142,6 +142,189 @@
               <article>
                 <p>测试7</p>
 <!-- more -->
+<h2 id="位运算有哪些">位运算有哪些</h2>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>用法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>按位与（AND）</td>
+<td><code>a &amp; b</code></td>
+<td>对于每一个比特位，只有两个操作数相应的比特位都是1时，结果才为1，否则为0。</td>
+</tr>
+<tr>
+<td>按位或（OR）</td>
+<td><code>a | b</code></td>
+<td>对于每一个比特位，当两个操作数相应的比特位至少有一个1时，结果为1，否则为0。</td>
+</tr>
+<tr>
+<td>按位异或（XOR）</td>
+<td><code>a ^ b</code></td>
+<td>对于每一个比特位，当两个操作数相应的比特位有且只有一个1时，结果为1，否则为0。</td>
+</tr>
+<tr>
+<td>按位非（NOT））</td>
+<td><code>~ a</code></td>
+<td>反转操作数的比特位，即0变成1，1变成0。</td>
+</tr>
+<tr>
+<td>左移（Left shift））</td>
+<td><code>a &lt;&lt; b</code></td>
+<td>将 a 的二进制形式向左移 b (&lt; 32) 比特位，右边用0填充。</td>
+</tr>
+<tr>
+<td>有符号右移</td>
+<td><code>a &gt;&gt; b</code></td>
+<td>将 a 的二进制表示向右移 b (&lt; 32) 位，丢弃被移出的位。</td>
+</tr>
+<tr>
+<td>无符号右移</td>
+<td><code>a &gt;&gt;&gt; b</code></td>
+<td>将 a 的二进制表示向右移 b (&lt; 32) 位，丢弃被移出的位，并使用 0 在左侧填充。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="按位与">按位与 &amp;</h2>
+<blockquote>
+<p>&amp;是二元运算符，它以特定的方式的方式组合操作数中对应的位，如果对应的位都为1，那么结果就是1， 如果任意一个位是0 则结果就是0。</p>
+<p>1 &amp; 3的结果为1</p>
+<p>那我们来看看他是怎么运行的</p>
+<p>1的二进制表示为 0 0 0 0 0 0 1</p>
+<p>3的二进制表示为 0 0 0 0 0 1 1</p>
+<p>根据 &amp; 的规则 得到的结果为 0 0 0 0 0 0 0 1,十进制表示就是1</p>
+</blockquote>
+<p>与运算的一个简单应用</p>
+<pre><code>3&amp;1 // 1; =&gt; 奇数&amp;1 = 1
+2&amp;1 // 0; =&gt; 偶数&amp;1 = 0
+</code></pre>
+<blockquote>
+<p>可以等同于用于奇偶计算</p>
+</blockquote>
+<h2 id="按位或">按位或 ｜</h2>
+<blockquote>
+<p>|运算符跟&amp;的区别在于如果对应的位中任一个操作数为1 那么结果就是1。</p>
+<p>1的二进制表示为 0 0 0 0 0 0 1</p>
+<p>3的二进制表示为 0 0 0 0 0 1 1</p>
+<p>所以 1 | 3的结果为3</p>
+</blockquote>
+<pre><code class="language-javascript">// 一般方法：
+var rIndex = Math.floor((Math.random() * len))
+
+// 使用位运算的方法
+var rIndex = Math.random() * len | 0
+</code></pre>
+<h2 id="按位异或">按位异或 ^</h2>
+<blockquote>
+<p>^运算符跟|类似，但有一点不同的是 如果两个操作位都为1的话，结果产生0。</p>
+<p>1的二进制表示为 0 0 0 0 0 0 1</p>
+<p>3的二进制表示为 0 0 0 0 0 1 1</p>
+<p>所以 1 ^ 3的结果为2</p>
+</blockquote>
+<p>简单一个应用是用于数值交换，也可以判断两个数是否相等</p>
+<pre><code class="language-javascript">// 正规君
+var a = 1;
+var b = 2;
+var temp;
+temp = a;
+a = b;
+b = temp
+</code></pre>
+<pre><code class="language-javascript">// 杂牌君
+var a = 1;
+var b = 2;
+a = a ^ b;
+b = b ^ a;
+a = a ^ b;
+
+// 一般方法的简写：
+togle = toggle ? 0 : 1;
+
+// 使用位运算的方法：
+toggle ^= 1;
+</code></pre>
+<h2 id="按位非~">按位非~</h2>
+<blockquote>
+<p>~运算符是对位求反，1变0,0变1，也就是求二进制的反码</p>
+<p>1的二进制表示为 0 0 0 0 0 0 1</p>
+<p>所以 ~1 的结果是-2</p>
+</blockquote>
+<p>简单的理解<code>~</code>就是对原数进行取整然后取反，最后在做在减一操作，如<code>~9</code>可以简单的理解成为<code>(-9 - 1) = -10</code></p>
+<pre><code class="language-javascript">~9 // -10
+~-9 // 8
+~9.8 // 10
+~-9.8 // 8
+if(~str.indexOf(&quot;a&quot;)) {
+// 判断字符串是否存在某一个值
+}
+
+console.log('~null: ', ~null);       // =&gt; -1
+console.log('~undefined: ', ~undefined);  // =&gt; -1
+console.log('~0: ', ~0);          // =&gt; -1
+console.log('~{}: ', ~{});         // =&gt; -1
+console.log('~[]: ', ~[]);         // =&gt; -1
+console.log('~(1/0): ', ~(1/0));      // =&gt; -1
+console.log('~false: ', ~false);      // =&gt; -1
+console.log('~true: ', ~true);       // =&gt; -2
+console.log('~1.2543: ', ~1.2543);     // =&gt; -2
+console.log('~4.9: ', ~4.9);       // =&gt; -5
+console.log('~(-2.999): ', ~(-2.999));   // =&gt; 1
+console.log('~~null: ', ~~null);       // =&gt; 0
+console.log('~~undefined: ', ~~undefined);  // =&gt; 0
+console.log('~~0: ', ~~0);          // =&gt; 0
+console.log('~~{}: ', ~~{});         // =&gt; 0
+console.log('~~[]: ', ~~[]);         // =&gt; 0
+console.log('~~(1/0): ', ~~(1/0));      // =&gt; 0
+console.log('~~false: ', ~~false);      // =&gt; 0
+console.log('~~true: ', ~~true);       // =&gt; 1
+console.log('~~1.2543: ', ~~1.2543);     // =&gt; 1
+console.log('~~4.9: ', ~~4.9);       // =&gt; 4
+console.log('~~(-2.999): ', ~~(-2.999));   // =&gt; -2
+</code></pre>
+<blockquote>
+<p>当然话，我这是简单的理解，实现还是按二进制度的位来依次计算的,能过上面的例子，我们不难发现，我们可以用<code>~~9.3434</code>简单的对浮点点进行取整，但是这里没有四舍五入的。</p>
+</blockquote>
+<h2 id="左移">左移 &lt;&lt;</h2>
+<blockquote>
+<p><code>&lt;&lt;</code>运算符使指定值的二进制所有位都左移规定的次数，对于其移动规则只需记住丢弃最高位，0补最低位即按二进制形式把所有的数字向左移动对应的位数，高位移出(舍弃)，低位的空位补零。</p>
+<p>1的二进制表示为 0 0 0 0 0 0 1</p>
+<p>所以 1&lt;&lt;1的结果为2</p>
+</blockquote>
+<p>可以理解对数取整然后做乘法，乘法的2的阶乘。</p>
+<pre><code class="language-javascript">2 &lt;&lt; 1 // 4 等价于 2 * 2^1
+2 &lt;&lt; 2 // 8 等价于 2 * 2^2
+</code></pre>
+<h2 id="右移">右移 &gt;&gt;</h2>
+<blockquote>
+<p><code>&gt;&gt;</code>运算符使指定值的二进制所有位都右移规定的次数，对于其移动规则只需记住符号位不变，左边补上符号位即按二进制形式把所有的数字向右移动对应的位数，低位移出(舍弃)，高位的空位补符号位，即正数补零，负数补1。</p>
+<p>1的二进制表示为 0 0 0 0 0 0 1</p>
+<p>所以 1&gt;&gt;1的结果为0</p>
+</blockquote>
+<p>可以理解对数取整然后做除法，除数为2的阶乘。</p>
+<pre><code class="language-javascript">8 &lt;&lt; 1 // 4 等价于 2 / 2^1
+8 &lt;&lt; 2 // 2 等价于 2 / 2^2
+8 &lt;&lt; 3 // 1 等价于 2 / 2^2
+</code></pre>
+<h2 id="无符号右移">无符号右移&gt;&gt;&gt;</h2>
+<blockquote>
+<p><code>&gt;&gt;&gt;</code>运算符忽略了符号位扩展，0补最高位，但是只是对32位和64位的值有意义。
+对于非负数，有符号右移和无符号右移总是返回相同的结果。</p>
+<p>例如，<code>9 &gt;&gt;&gt; 2</code>得到 2 和 <code>9 &gt;&gt; 2</code>相同。</p>
+</blockquote>
+<p>简单应用取整：</p>
+<pre><code class="language-js">// 十进制度转二进制
+var res = 14.toString(2); // &quot;1110&quot;
+console.log(~~ 6.83)    // 6
+console.log(6.83 &gt;&gt; 0)  // 6
+console.log(6.83 &lt;&lt; 0)  // 6
+console.log(6.83 | 0)   // 6
+// &gt;&gt;&gt;不可对负数取整
+console.log(6.83 &gt;&gt;&gt; 0)   // 6
+</code></pre>
 
               </article>
             </div>
@@ -163,9 +346,9 @@
     </div>
     <footer id="site-footer" class="site-footer" role="contentinfo">
     <h1 class="site-header">
-        <a href="https://he5050.github.io"> 庵主老衲来了 </a>
+        <a href="https://he5050.github.io"> 庵主老衲来也 </a>
     </h1>
-    <p class="site-description" style="font-size:18px">五年前端三年切图
+    <p class="site-description" style="font-size:18px">五年前端三年切图@怡红院
 </p>
     <div id="menu-footer" class="menu-container menu-footer" role="navigation">
         <div class="menu">

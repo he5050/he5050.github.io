@@ -1109,6 +1109,9 @@ a img {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+.over {
+  margin-bottom: 0 !important;
+}
 .excerpt {
   text-align: center;
   background: white;
@@ -1117,7 +1120,7 @@ a img {
   backface-visibility: hidden;
   margin-bottom: 1.5em;
 }
-.featured-image {
+.excerpt .featured-image {
   position: relative;
   height: 0;
   padding-bottom: 50%;
@@ -1613,7 +1616,7 @@ a img {
 /* 1200px */
 @media all and (min-width: 75em) {
   .entry-container {
-    padding: 0 22.22%;
+    padding: 0 10%;
   }
   .entry-content img.full-width {
     width: 179.9%;
