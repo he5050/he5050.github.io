@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://he5050.github.io</id>
     <title>庵主老衲来也</title>
-    <updated>2019-07-08T02:56:14.575Z</updated>
+    <updated>2019-07-08T03:52:23.471Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://he5050.github.io"/>
     <link rel="self" href="https://he5050.github.io/atom.xml"/>
@@ -271,14 +271,14 @@ console.log(6.83 &gt;&gt;&gt; 0)   // 6
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[测试]]></title>
+        <title type="html"><![CDATA[常用库与资源站点收藏]]></title>
         <id>https://he5050.github.io/post/ce-shi</id>
         <link href="https://he5050.github.io/post/ce-shi">
         </link>
         <updated>2019-07-02T03:43:18.000Z</updated>
-        <summary type="html"><![CDATA[<p>测试</p>
+        <summary type="html"><![CDATA[<p>平时收集的觉得好用的以及有意思的库与资源网</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>测试</p>
+        <content type="html"><![CDATA[<p>平时收集的觉得好用的以及有意思的库与资源网</p>
 <!-- more -->
 ]]></content>
     </entry>
@@ -310,12 +310,32 @@ console.log(6.83 &gt;&gt;&gt; 0)   // 6
         <link href="https://he5050.github.io/post/ce-shi-nei-rong">
         </link>
         <updated>2019-06-27T02:49:35.000Z</updated>
-        <summary type="html"><![CDATA[<p>好记性不如烂笔头，把平时遗落的点记录一下<!--more--></p>
+        <summary type="html"><![CDATA[<p>好记性不如烂笔头，把平时遗落的点记录一下</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>好记性不如烂笔头，把平时遗落的点记录一下<!--more--></p>
+        <content type="html"><![CDATA[<p>好记性不如烂笔头，把平时遗落的点记录一下</p>
 <!--more-->
-<h1 id=""></h1>
-<p>目录</p>
+<h1 id="查漏补缺">查漏补缺</h1>
+<h2 id="1-arrayfrom的妙用">1. Array.from()的妙用</h2>
+<blockquote>
+<p>可以替代我们Array.map()的另外一种方法,主要注意是Array.from(),可以授受第二个参数</p>
+</blockquote>
+<pre><code class="language-js">const cities = [
+    { name: 'Paris', visited: 'no' },
+    { name: 'Lyon', visited: 'no' },
+    { name: 'Marseille', visited: 'yes' },
+    { name: 'Rome', visited: 'yes' },
+    { name: 'Milan', visited: 'no' },
+    { name: 'Palermo', visited: 'yes' },
+    { name: 'Genoa', visited: 'yes' },
+    { name: 'Berlin', visited: 'no' },
+    { name: 'Hamburg', visited: 'yes' },
+    { name: 'New York', visited: 'yes' }
+];
+
+const cityNames = Array.from(cities, ({ name}) =&gt; name);
+console.log(cityNames);
+// outputs [&quot;Paris&quot;, &quot;Lyon&quot;, &quot;Marseille&quot;, &quot;Rome&quot;, &quot;Milan&quot;, &quot;Palermo&quot;, &quot;Genoa&quot;, &quot;Berlin&quot;, &quot;Hamburg&quot;, &quot;New York&quot;]
+</code></pre>
 ]]></content>
     </entry>
 </feed>
