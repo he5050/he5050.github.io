@@ -109,7 +109,7 @@
         }
 })();
 var a = calendar.solar2lunar();
-console.log(a);
+// console.log(a);
 $(".day-content").text(
         a.cYear +
                 "年" +
@@ -139,7 +139,7 @@ $(".lunar-content").text(
 );
 
 var ip = returnCitySN["cip"];
-console.log(returnCitySN);
+// console.log(returnCitySN);
 var cityName = returnCitySN["cname"];
 
 if (cityName.split("省").length > 1) {
@@ -161,7 +161,7 @@ $.ajax({
                 new Date().getTime(),
         dataType: "jsonp",
         success: function(data) {
-                console.log(data);
+                // console.log(data);
                 if (data.content) {
                         $(".footer-tips").text(data.content);
                 }
@@ -461,7 +461,7 @@ window.addEventListener("resize", function() {
         gl.uniform2f(webgl.resUniformLoc, w, h);
 });
 window.addEventListener("click", function(e) {
-        console.log("点击了", e, e.clientX, e.clientY);
+        // console.log("点击了", e, e.clientX, e.clientY);
         var firework = new Firework();
         firework.x = e.offsetX || e.pageX || e.layerX;
         firework.y = e.offsetY || e.pageY || e.layerY;
@@ -516,9 +516,9 @@ if (clock.length > 0) {
                         top = top < 0 ? 0 : top;
                         // 判断是否到底部了
                         top = top > diffTop - 24 ? diffTop : top;
-                        console.log(
-                                `scrollTop值： ${scrollTop}, topH的值: ${topH}, diffTop的值：${diffTop}, top的值：${top}, mainH的值：${mainH}`
-                        );
+                        // console.log(
+                        //         `scrollTop值： ${scrollTop}, topH的值: ${topH}, diffTop的值：${diffTop}, top的值：${top}, mainH的值：${mainH}`
+                        // );
                         weather.css("top", top);
                         clock.css("top", top);
                 }, 50)
