@@ -7,7 +7,7 @@
 <meta name="robots" content="all,follow">
 <meta name="googlebot" content="index,follow,snippet,archive">
 <title>五年前端三年切图 | 庵主老衲来也</title>
-<link rel="shortcut icon" href="https://he5050.github.io/favicon.ico?v=1562313648436">
+<link rel="shortcut icon" href="https://he5050.github.io/favicon.ico?v=1562551751066">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
   integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="https://he5050.github.io/styles/main.css" type='text/css' media='all'>
@@ -307,11 +307,12 @@
       mu.removeClass("active");
       toc.removeClass("hide");
     });
+    // /*获取文章目录集合,可通过:header过滤器*/
+    // var alis = $('.post-content :header');
+    // /*获取侧边栏目录列表集合**/
+    // var sidebar_alis = $('.markdownIt-TOC a');
+
     // function locateCatelogList() {
-    //   /*获取文章目录集合,可通过:header过滤器*/
-    //   var alis = $('.post-content :header');
-    //   /*获取侧边栏目录列表集合**/
-    //   var sidebar_alis = $('.markdownIt-TOC a');
     //   /*获取滚动条到顶部的距离*/
     //   var scroll_height = $(window).scrollTop();
     //   for (var i = 0; i < alis.length; i++) {
@@ -319,19 +320,26 @@
     //     var a_height = $(alis[i]).offset().top;
     //     if (a_height < scroll_height) {
     //       /*高亮显示*/
+    //       console.log("asdfasdfa");
     //       sidebar_alis.removeClass('on');
     //       $(sidebar_alis[i]).addClass('on');
     //     }
     //   }
     // }
-    // $(function () {
-    //   /*绑定滚动事件 */
-    //   $(window).bind('scroll', locateCatelogList);
-    // });
-
+    var tocH = toc.offset().top;
     window.addEventListener(
       "scroll", function () {
-        console.log("滚地偶那个", toc.offset().top);
+        var scrollTop =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+        console.log("滚地偶那个scrollTop", scrollTop, tocH);
+        var top = 0;
+        if (scrollTop > tocH) {
+          top = scrollTop - tocH + 50;
+
+        }
+        $(".toc-title").css("top", top);
       })
   </script>
 </body>
