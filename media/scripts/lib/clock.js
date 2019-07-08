@@ -494,31 +494,33 @@ var throttle = function(action, delay) {
 };
 var weather = $(".weather-warp");
 var clock = $(".clock-warp");
-var topH = clock.offset().top; // 距离顶部的距离
-var clockH = clock.height(); // 侧边栏的高度
-$(".overflow-container .post").css("overflow", "hidden");
+if (clock.length > 0) {
+        var topH = clock.offset().top; // 距离顶部的距离
+        var clockH = clock.height(); // 侧边栏的高度
+        $(".overflow-container .post").css("overflow", "hidden");
 
-window.addEventListener(
-        "scroll",
-        throttle(function() {
-                var mainH = $(".main").height();
-                var diffTop = mainH - clockH;
-                var scrollTop =
-                        window.pageYOffset ||
-                        document.documentElement.scrollTop ||
-                        document.body.scrollTop;
-                var top = 0;
-                if (scrollTop > top + 10) {
-                        top = scrollTop - topH + 10;
-                }
-                // 判断是否到顶点了
-                top = top < 0 ? 0 : top;
-                // 判断是否到底部了
-                top = top > diffTop - 24 ? diffTop : top;
-                console.log(
-                        `scrollTop值： ${scrollTop}, topH的值: ${topH}, diffTop的值：${diffTop}, top的值：${top}, mainH的值：${mainH}`
-                );
-                weather.css("top", top);
-                clock.css("top", top);
-        }, 50)
-);
+        window.addEventListener(
+                "scroll",
+                throttle(function() {
+                        var mainH = $(".main").height();
+                        var diffTop = mainH - clockH;
+                        var scrollTop =
+                                window.pageYOffset ||
+                                document.documentElement.scrollTop ||
+                                document.body.scrollTop;
+                        var top = 0;
+                        if (scrollTop > top + 10) {
+                                top = scrollTop - topH + 10;
+                        }
+                        // 判断是否到顶点了
+                        top = top < 0 ? 0 : top;
+                        // 判断是否到底部了
+                        top = top > diffTop - 24 ? diffTop : top;
+                        console.log(
+                                `scrollTop值： ${scrollTop}, topH的值: ${topH}, diffTop的值：${diffTop}, top的值：${top}, mainH的值：${mainH}`
+                        );
+                        weather.css("top", top);
+                        clock.css("top", top);
+                }, 50)
+        );
+}
