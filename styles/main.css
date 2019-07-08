@@ -1133,6 +1133,7 @@ a img {
   backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  background-color: #222;
 }
 .zoom .featured-image-link {
   -webkit-backface-visibility: hidden;

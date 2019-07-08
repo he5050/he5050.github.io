@@ -3,21 +3,26 @@
  */
 (function() {
         var clock = $("#utility-clock");
-        utilityClock(clock);
-        window.addEventListener("resize", function() {
+
+        if (clock.length > 0) {
                 utilityClock(clock);
+        }
+        window.addEventListener("resize", function() {
+                if (clock.length > 0) {
+                        utilityClock(clock);
+                }
         });
         function utilityClock(container) {
                 //侧边栏无法显示时不执行时钟代码
                 if ($("body").width() <= 1200) {
-                        $(".widget_custom_clock")
+                        $(".clock-box")
                                 .hide()
                                 .remove();
                         return;
                 }
                 //检测是否支持html5 不支持则remove元素后return
                 if (typeof requestAnimationFrame !== "function") {
-                        $(".widget_custom_clock")
+                        $(".clock-box")
                                 .hide()
                                 .remove();
                         return;

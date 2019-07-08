@@ -21,6 +21,62 @@
 
 
 
+  <style>
+    .loop-container {
+      position: relative;
+    }
+
+    .toc-title {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: all .5s;
+      width: 40px;
+      background-color: #ee4d4d;
+      color: #fff;
+      height: 20px;
+      line-height: 20px;
+      font-size: 14px;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .hide {
+      right: -40px;
+    }
+
+    .toc-card {
+      position: absolute;
+      top: 0;
+      right: -200px;
+      transition: all .5s;
+      width: 200px;
+      background-color: #ee4d4d;
+      color: #fff;
+    }
+
+    .toc-card ul li a {
+      color: #fff;
+      transition: all .5s;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .toc-card ul li a:hover {
+      font-size: 20px;
+      text-decoration: underline;
+      text-decoration-color: #000;
+      text-decoration-style: wavy;
+
+    }
+
+    .active {
+      right: 0px;
+    }
+  </style>
 </head>
 
 <body class="home blog ct-body standard">
@@ -161,33 +217,11 @@
 </ul>
 
   </div>
-  <script>
-    function locateCatelogList() {
-      /*获取文章目录集合,可通过:header过滤器*/
-      var alis = $('.post-content :header');
-      /*获取侧边栏目录列表集合**/
-      var sidebar_alis = $('.markdownIt-TOC a');
-      /*获取滚动条到顶部的距离*/
-      var scroll_height = $(window).scrollTop();
-      for (var i = 0; i < alis.length; i++) {
-        /*获取锚点集合中的元素分别到顶点的距离*/
-        var a_height = $(alis[i]).offset().top;
-        if (a_height < scroll_height) {
-          /*高亮显示*/
-          sidebar_alis.removeClass('on');
-          $(sidebar_alis[i]).addClass('on');
-        }
-      }
-    }
-    $(function () {
-      /*绑定滚动事件 */
-      $(window).bind('scroll', locateCatelogList);
-    });
-  </script>
 </div>
 
 
               
+              <div class="toc-title">目录</div>
             </div>
           </div>
           
@@ -258,6 +292,48 @@
 <script src="https://he5050.github.io/media/scripts/lib/clock.js"></script>
 
   </div>
+  <script>
+    var toc = $(".toc-title");
+    var mu = $(".toc-card");
+    toc.click(function () {
+      if (toc.hasClass("hide")) {
+        toc.removeClass("hide");
+      } else {
+        toc.addClass("hide");
+        mu.addClass("active");
+      }
+    });
+    mu.mouseleave(function () {
+      mu.removeClass("active");
+      toc.removeClass("hide");
+    });
+    // function locateCatelogList() {
+    //   /*获取文章目录集合,可通过:header过滤器*/
+    //   var alis = $('.post-content :header');
+    //   /*获取侧边栏目录列表集合**/
+    //   var sidebar_alis = $('.markdownIt-TOC a');
+    //   /*获取滚动条到顶部的距离*/
+    //   var scroll_height = $(window).scrollTop();
+    //   for (var i = 0; i < alis.length; i++) {
+    //     /*获取锚点集合中的元素分别到顶点的距离*/
+    //     var a_height = $(alis[i]).offset().top;
+    //     if (a_height < scroll_height) {
+    //       /*高亮显示*/
+    //       sidebar_alis.removeClass('on');
+    //       $(sidebar_alis[i]).addClass('on');
+    //     }
+    //   }
+    // }
+    // $(function () {
+    //   /*绑定滚动事件 */
+    //   $(window).bind('scroll', locateCatelogList);
+    // });
+
+    window.addEventListener(
+      "scroll", function () {
+        console.log("滚地偶那个", toc.offset().top);
+      })
+  </script>
 </body>
 
 </html>
