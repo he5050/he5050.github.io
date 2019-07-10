@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://he5050.github.io</id>
     <title>庵主老衲来也</title>
-    <updated>2019-07-08T03:58:13.403Z</updated>
+    <updated>2019-07-10T03:06:14.408Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://he5050.github.io"/>
     <link rel="self" href="https://he5050.github.io/atom.xml"/>
@@ -12,7 +12,7 @@
     <icon>https://he5050.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 庵主老衲来也</rights>
     <entry>
-        <title type="html"><![CDATA[什么是真的体位]]></title>
+        <title type="html"><![CDATA[关于js的位运算]]></title>
         <id>https://he5050.github.io/post/ce-shi-7</id>
         <link href="https://he5050.github.io/post/ce-shi-7">
         </link>
@@ -259,15 +259,40 @@ console.log(6.83 &gt;&gt;&gt; 0)   // 6
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[测试2]]></title>
+        <title type="html"><![CDATA[关于使用puppeteer的screenshot截图乱码]]></title>
         <id>https://he5050.github.io/post/ce-shi-2</id>
         <link href="https://he5050.github.io/post/ce-shi-2">
         </link>
         <updated>2019-07-02T03:43:32.000Z</updated>
-        <summary type="html"><![CDATA[<p>测试2</p>
+        <summary type="html"><![CDATA[<p>前一会得空写了一个微信小助手，发现在centos上面发微信发送图片为乱码</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>测试2</p>
+        <content type="html"><![CDATA[<p>前一会得空写了一个微信小助手，发现在centos上面发微信发送图片为乱码</p>
 <!-- more -->
+<h1 id="screenshot截图乱码">screenshot截图乱码</h1>
+<p>如图所示：
+<img src="http://ww1.sinaimg.cn/large/69abf49bly1g4ujzb8b9gj20bi0kg79e.jpg" alt=""></p>
+<h2 id="问题">问题</h2>
+<p>后面在网上查了一下原来是因为字体库的问题</p>
+<h2 id="解决">解决</h2>
+<h3 id="1-安装fontconfig">1. 安装fontconfig</h3>
+<ul>
+<li><code>yum -y install fontconfig</code></li>
+<li>在执行完上述命令后，就可以在<code>/usr/share</code>文件里面的<code>fonts</code>和<code>fontconfig</code></li>
+</ul>
+<h3 id="2-添加中文字体库">2. 添加中文字体库</h3>
+<ul>
+<li>在CentOS的/usr/share/fonts新建一个叫chinese的文件夹<code>mkdir /usr/share/fonts/chinese</code></li>
+<li>从<code>window</code>的<code>C:\Windows\Fonts</code>里面把你需要的字体拷贝出来。比如说我需要宋体，我就选择<code>simsun.ttc</code>上传到<code>/usr/share/fonts/chinese</code></li>
+<li>修改chinese目录的权限。<code>chmod -R 775 /usr/share/fonts/chinese</code></li>
+<li>接下来需要安装ttmkfdir来搜索目录中所有的字体信息，并汇总生成fonts.scale文件，输入命令<code>yum -y install ttmkfdir</code></li>
+<li>执行ttmkfdir命令，<code>ttmkfdir -e /usr/share/X11/fonts/encodings/encodings.dir</code></li>
+<li>修改字体配置文件，<code>vi /etc/fonts/fonts.conf</code></li>
+</ul>
+<p><img src="http://ww1.sinaimg.cn/large/69abf49bly1g4uk88063gj20gx06eglj.jpg" alt=""></p>
+<ul>
+<li>刷新内存中的字体缓存，<code>fc-cache</code></li>
+<li>看一下现在机器上已经有了刚才添加的字体。<code>fc-list :lang=zh</code>,<code>fc-list</code></li>
+</ul>
 ]]></content>
     </entry>
     <entry>
