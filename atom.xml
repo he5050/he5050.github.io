@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://he5050.github.io</id>
     <title>庵主老衲来也</title>
-    <updated>2019-07-10T03:22:17.335Z</updated>
+    <updated>2019-07-10T07:22:50.260Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://he5050.github.io"/>
     <link rel="self" href="https://he5050.github.io/atom.xml"/>
@@ -211,42 +211,6 @@ console.log(6.83 &gt;&gt;&gt; 0)   // 6
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[测试6]]></title>
-        <id>https://he5050.github.io/post/ce-shi-6</id>
-        <link href="https://he5050.github.io/post/ce-shi-6">
-        </link>
-        <updated>2019-07-02T07:32:57.000Z</updated>
-        <summary type="html"><![CDATA[<p>测试6</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>测试6</p>
-<!-- more -->
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[测试5]]></title>
-        <id>https://he5050.github.io/post/ce-shi-5</id>
-        <link href="https://he5050.github.io/post/ce-shi-5">
-        </link>
-        <updated>2019-07-02T04:02:19.000Z</updated>
-        <summary type="html"><![CDATA[<p>测试5</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>测试5</p>
-<!-- more -->
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[测试4]]></title>
-        <id>https://he5050.github.io/post/ce-shi-4</id>
-        <link href="https://he5050.github.io/post/ce-shi-4">
-        </link>
-        <updated>2019-07-02T03:50:09.000Z</updated>
-        <summary type="html"><![CDATA[<p>测试4</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>测试4</p>
-<!-- more -->
-]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[常用代码]]></title>
         <id>https://he5050.github.io/post/ce-shi-3</id>
         <link href="https://he5050.github.io/post/ce-shi-3">
@@ -293,6 +257,23 @@ console.log(6.83 &gt;&gt;&gt; 0)   // 6
 <li>刷新内存中的字体缓存，<code>fc-cache</code></li>
 <li>看一下现在机器上已经有了刚才添加的字体。<code>fc-list :lang=zh</code>,<code>fc-list</code></li>
 </ul>
+<h3 id="3-补充">3. 补充</h3>
+<blockquote>
+<p>在centos上面使用puppeteer时创建Page要注意使用无头配置</p>
+</blockquote>
+<pre><code class="language-js">const browser = await puppeteer.launch({
+        ignoreHTTPSErrors: true,
+        headless: true,
+        defaultViewport: {
+            // tips: 标准2倍图 750 1334
+            // width: 375 ,
+            // height: 812
+            width: 414,
+            height: 736
+        },
+        args: [&quot;--no-sandbox&quot;, &quot;--disable-setuid-sandbox&quot;]
+    });
+</code></pre>
 ]]></content>
     </entry>
     <entry>
@@ -305,6 +286,74 @@ console.log(6.83 &gt;&gt;&gt; 0)   // 6
 ]]></summary>
         <content type="html"><![CDATA[<p>平时收集的觉得好用的以及有意思的库与资源网</p>
 <!-- more -->
+<h2 id="vue库">vue库</h2>
+<h3 id="1-vue-3d-model">1. <a href="https://github.com/hujiulong/vue-3d-model">vue-3d-model</a></h3>
+<pre><code>	一个展示三维模型的Vue组件，支持模型操作和模型点击事件，能自动缩放模型到合适大小并校正偏移，支持多种格式的模型。
+</code></pre>
+<p><img src="https://ws1.sinaimg.cn/large/69abf49bly1g4uq4lh7dtg20d60bwtg0.gif" alt=""></p>
+<hr>
+<h3 id="2-yox">2. <a href="https://github.com/yoxjs/yox">yox</a></h3>
+<pre><code>	一个兼容低版本浏览器的类 Vue 框架。
+</code></pre>
+<hr>
+<h3 id="3-noahv">3. <a href="https://www.noahv.org/#/guide/about">noahv</a></h3>
+<pre><code>	NoahV是一个基于vue开发的前端开发框架，主要适用于监控运维、数据分析等场景，同时也适用于常见的后台管理系统
+</code></pre>
+<hr>
+<h2 id="react库">react库</h2>
+<h2 id="css库">css库</h2>
+<h3 id="1papercss">1.<a href="https://github.com/papercss/papercss">papercss</a></h3>
+<pre><code>手绘风格的样式库
+</code></pre>
+<hr>
+<h2 id="其他">其他</h2>
+<h3 id="1-ogl">1. <a href="https://github.com/oframe/ogl">ogl</a></h3>
+<pre><code> 最小的 WebGL 框架
+</code></pre>
+<hr>
+<h3 id="2-charts">2. <a href="https://github.com/frappe/charts">charts</a></h3>
+<pre><code>	简单、响应迅速、现代SVG图表库 零依赖关系
+</code></pre>
+<p><img src="https://ws1.sinaimg.cn/large/69abf49bly1g4uqc05pxng20q6086b29.gif" alt=""></p>
+<hr>
+<h3 id="3-china-area-data">3. <a href="https://github.com/airyland/china-area-data">china-area-data</a></h3>
+<pre><code>	中国省市区数据	
+</code></pre>
+<p><img src="https://ws1.sinaimg.cn/large/69abf49bly1g4uqyqybq8j20lx0bf0ub.jpg" alt=""></p>
+<hr>
+<h3 id="4-echarts">4. <a href="https://github.com/apache/incubator-echarts">ECharts</a></h3>
+<pre><code>	百度开源的图标库
+</code></pre>
+<hr>
+<h2 id="小程序">小程序</h2>
+<h2 id="工具库">工具库</h2>
+<h3 id="1-verynginx">1. <a href="https://github.com/alexazhou/VeryNginx/blob/master/readme_zh.md">VeryNginx</a></h3>
+<pre><code>VeryNginx 是一个功能强大而对人类友好的 Nginx 扩展程序.
+</code></pre>
+<hr>
+<h2 id="在线工具">在线工具</h2>
+<h3 id="1-免费且易于使用的在线pdf工具">1. <a href="https://tools.pdf24.org/zh/">免费且易于使用的在线PDF工具</a></h3>
+<hr>
+<h3 id="2-给你提供许多种颜色搭配每种都是四种颜色">2. <a href="https://colordrop.io/">给你提供许多种颜色搭配，每种都是四种颜色</a></h3>
+<hr>
+<h3 id="3-蚂蚁金服设计平台">3. <a href="https://design.alipay.com/">蚂蚁金服设计平台</a></h3>
+<hr>
+<h3 id="4-在线ip地址">4 <a href="https://iplist.cc/">在线IP地址</a></h3>
+<pre><code>IP 查询网站，支持 IPv6 可获取来源国家、网络商等信息
+</code></pre>
+<hr>
+<h3 id="5-speed-line">5. <a href="https://wangyasai.github.io/Speed-Line/">Speed-Line</a></h3>
+<pre><code>快速画出有冲击力的线条
+</code></pre>
+<h2 id="文档">文档</h2>
+<h3 id="1-puppeteer文档">1. <a href="https://zhaoqize.github.io/puppeteer-api-zh_CN/">Puppeteer文档</a></h3>
+<hr>
+<h3 id="2-ai-算法工程师手册">2. <a href="http://www.huaxiaozhuan.com/">AI 算法工程师手册</a></h3>
+<hr>
+<h3 id="39种常见的前端跨域解决方案详解">3.<a href="https://juejin.im/post/5d1ecb96f265da1b6d404433">9种常见的前端跨域解决方案（详解）</a></h3>
+<hr>
+<h3 id="4前端团队代码评审-checklist-清单">4.<a href="https://juejin.im/post/5d1c6550518825330a3bfa01">前端团队代码评审 CheckList 清单</a></h3>
+<hr>
 ]]></content>
     </entry>
     <entry>

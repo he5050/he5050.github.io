@@ -7,7 +7,7 @@
 <meta name="robots" content="all,follow">
 <meta name="googlebot" content="index,follow,snippet,archive">
 <title>关于使用puppeteer的screenshot截图乱码 | 庵主老衲来也</title>
-<link rel="shortcut icon" href="https://he5050.github.io/favicon.ico?v=1562728935482">
+<link rel="shortcut icon" href="https://he5050.github.io/favicon.ico?v=1562743366425">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
   integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="https://he5050.github.io/styles/main.css" type='text/css' media='all'>
@@ -233,6 +233,23 @@
 <li>刷新内存中的字体缓存，<code>fc-cache</code></li>
 <li>看一下现在机器上已经有了刚才添加的字体。<code>fc-list :lang=zh</code>,<code>fc-list</code></li>
 </ul>
+<h3 id="3-补充">3. 补充</h3>
+<blockquote>
+<p>在centos上面使用puppeteer时创建Page要注意使用无头配置</p>
+</blockquote>
+<pre><code class="language-js">const browser = await puppeteer.launch({
+        ignoreHTTPSErrors: true,
+        headless: true,
+        defaultViewport: {
+            // tips: 标准2倍图 750 1334
+            // width: 375 ,
+            // height: 812
+            width: 414,
+            height: 736
+        },
+        args: [&quot;--no-sandbox&quot;, &quot;--disable-setuid-sandbox&quot;]
+    });
+</code></pre>
 
               </article>
               
@@ -248,6 +265,7 @@
 <ul>
 <li><a href="#1-%E5%AE%89%E8%A3%85fontconfig">1. 安装fontconfig</a></li>
 <li><a href="#2-%E6%B7%BB%E5%8A%A0%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E5%BA%93">2. 添加中文字体库</a></li>
+<li><a href="#3-%E8%A1%A5%E5%85%85">3. 补充</a></li>
 </ul>
 </li>
 </ul>
