@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://he5050.github.io</id>
     <title>庵主老衲来也</title>
-    <updated>2019-07-10T07:25:55.455Z</updated>
+    <updated>2019-07-10T07:34:23.530Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://he5050.github.io"/>
     <link rel="self" href="https://he5050.github.io/atom.xml"/>
@@ -325,7 +325,16 @@ console.log(6.83 &gt;&gt;&gt; 0)   // 6
 <pre><code>	百度开源的图标库
 </code></pre>
 <hr>
-<h2 id="小程序">小程序</h2>
+<h3 id="5-ant-motion">5. <a href="https://github.com/ant-design/ant-motion/blob/master/README.cn.md">Ant Motion</a></h3>
+<pre><code>	阿里开源的项目，一套 React 框架动效解决方案，可以帮助开发者，更容易的在项目中使用动效。同时可以方便快捷地制作一个公司的介绍页
+</code></pre>
+<hr>
+<h2 id="微信">微信</h2>
+<h3 id="2-jquery-weui">2. <a href="https://github.com/lihongxun945/jquery-weui">jquery-weui</a></h3>
+<pre><code>可能是最好用 WeUI 版本
+</code></pre>
+<p><img src="http://ww1.sinaimg.cn/large/69abf49bly1g4urwxz0bwj20hs0vkwey.jpg" alt=""></p>
+<hr>
 <h2 id="工具库">工具库</h2>
 <h3 id="1-verynginx">1. <a href="https://github.com/alexazhou/VeryNginx/blob/master/readme_zh.md">VeryNginx</a></h3>
 <pre><code>VeryNginx 是一个功能强大而对人类友好的 Nginx 扩展程序.
