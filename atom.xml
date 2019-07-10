@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://he5050.github.io</id>
     <title>庵主老衲来也</title>
-    <updated>2019-07-10T08:49:21.766Z</updated>
+    <updated>2019-07-10T09:09:57.454Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://he5050.github.io"/>
     <link rel="self" href="https://he5050.github.io/atom.xml"/>
@@ -160,6 +160,10 @@
 </code></pre>
 <p><img src="http://ww1.sinaimg.cn/large/69abf49bly1g4uu87xqcsj20ar0cbq2v.jpg" alt=""></p>
 <hr>
+<h3 id="25webster">25.<a href="https://github.com/zhuyingda/webster">webster</a></h3>
+<pre><code>node的爬虫框架
+</code></pre>
+<hr>
 <h2 id="微信">微信</h2>
 <h3 id="1-jquery-weui">1. <a href="https://github.com/lihongxun945/jquery-weui">jquery-weui</a></h3>
 <pre><code>可能是最好用 WeUI 版本
@@ -174,9 +178,13 @@
 <h3 id="3-wxapp-market">3. <a href="https://github.com/o2team/wxapp-market">wxapp-market</a></h3>
 <pre><code>小程序营销组件。
 </code></pre>
-<p><img src="http://ww1.sinaimg.cn/large/69abf49bly1g4ush6l4l9j20zk0npmz0.jpg" alt=""></p>
+<p><img src="http://ww1.sinaimg.cn/large/69abf49bly1g4uudpfj02g208j0foal3.gif" alt=""></p>
 <hr>
 <h3 id="4-wepy">4. <a href="https://github.com/Tencent/wepy">wepy</a></h3>
+<pre><code>小程序开发框架基于vue
+</code></pre>
+<hr>
+<h3 id="5-mpvue">5. <a href="https://github.com/Meituan-Dianping/mpvue">mpvue</a></h3>
 <pre><code>小程序开发框架基于vue
 </code></pre>
 <hr>
@@ -224,6 +232,14 @@
 <h3 id="7深入理解nodejs核心思想与源码分析">7.<a href="https://yjhjstz.gitbooks.io/deep-into-node/content/">深入理解Node.js：核心思想与源码分析</a></h3>
 <hr>
 <h3 id="8项目规范">8.<a href="https://github.com/elsewhencode/project-guidelines/blob/master/README-zh.md">项目规范</a></h3>
+<hr>
+<h3 id="9vuejs-源码解析">9.<a href="https://github.com/answershuto/learnVue">Vue.js 源码解析</a></h3>
+<hr>
+<h3 id="1030-seconds-of-js">10.<a href="https://github.com/30-seconds/30-seconds-of-code">30-seconds-of-js</a></h3>
+<p><a href="https://github.com/kujian/30-seconds-of-code?utm_source=caibaojian.com">中文地址</a></p>
+<hr>
+<h3 id="1030-seconds-of-css">10.<a href="https://30-seconds.github.io/30-seconds-of-css/">30-seconds-of-css</a></h3>
+<p><a href="http://caibaojian.com/30-seconds-of-css/">中文地址</a></p>
 <hr>
 ]]></content>
     </entry>
