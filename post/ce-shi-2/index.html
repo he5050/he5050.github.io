@@ -7,12 +7,12 @@
 <meta name="robots" content="all,follow">
 <meta name="googlebot" content="index,follow,snippet,archive">
 <title>关于使用puppeteer的screenshot截图乱码 | 庵主老衲来也</title>
-<link rel="shortcut icon" href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/favicon.ico?v=1562815267252">
+<link rel="shortcut icon" href="https://he5050.github.io/favicon.ico?v=1562816420003">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
   integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/styles/main.css" type='text/css' media='all'>
+<link rel="stylesheet" href="https://he5050.github.io/styles/main.css" type='text/css' media='all'>
 
-<script src="E:/360MoveData/Users/Administrator/Documents/Gridea/output/media/scripts/lib/scrollreveal.min.js"></script>
+<script src="https://he5050.github.io/media/scripts/lib/scrollreveal.min.js"></script>
 
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
@@ -80,7 +80,7 @@
     <div class="container">
         <div id="title-info" class="title-info">
             <div id='site-title' class='site-title'>
-                <a href="E:/360MoveData/Users/Administrator/Documents/Gridea/output"> 庵主老衲来也 </a>
+                <a href="https://he5050.github.io"> 庵主老衲来也 </a>
             </div>
         </div>
         <button id="toggle-navigation" class="toggle-navigation">
@@ -170,12 +170,12 @@
             
             <span class="category">
               <span> / </span>
-              <a href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/tag/PbtT_RHgp/index.html">puppeteer</a>
+              <a href="https://he5050.github.io/tag/PbtT_RHgp">puppeteer</a>
             </span>
             
             <span class="category">
               <span> / </span>
-              <a href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/tag/ie2_l5xTf/index.html">乱码</a>
+              <a href="https://he5050.github.io/tag/ie2_l5xTf">乱码</a>
             </span>
             
           </div>
@@ -238,7 +238,7 @@
             <h2 class="screen-reader-text">Posts navigation</h2>
             <div class="nav-links">
               <a class="next page-numbers" style="font-size:20px"
-                href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/post/xiang-feng-yi-chang-rang-ni-shi-wang-liao/index.html">下一篇->相逢一场 让你失望了</a>
+                href="https://he5050.github.io/post/xiang-feng-yi-chang-rang-ni-shi-wang-liao">下一篇->相逢一场 让你失望了</a>
             </div>
           </nav>
           
@@ -250,7 +250,7 @@
     </div>
     <footer id="site-footer" class="site-footer" role="contentinfo">
     <h1 class="site-header">
-        <a href="E:/360MoveData/Users/Administrator/Documents/Gridea/output"> 庵主老衲来也 </a>
+        <a href="https://he5050.github.io"> 庵主老衲来也 </a>
     </h1>
     <p class="site-description" style="font-size:18px">五年前端三年切图@怡红院
 </p>
@@ -302,11 +302,11 @@
 </script>
 <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
 <script type="text/javascript" src="https://apip.weatherdt.com/view/static/js/r.js?v=1111"></script>
-<script src="E:/360MoveData/Users/Administrator/Documents/Gridea/output/media/scripts/lib/jquery.min.js"></script>
-<script src="E:/360MoveData/Users/Administrator/Documents/Gridea/output/media/scripts/lib/jquerymigrate.js"></script>
-<script src="E:/360MoveData/Users/Administrator/Documents/Gridea/output/media/scripts/lib/production.min.js"></script>
-<script src="E:/360MoveData/Users/Administrator/Documents/Gridea/output/media/scripts/lib/calendar.js"></script>
-<script src="E:/360MoveData/Users/Administrator/Documents/Gridea/output/media/scripts/lib/clock.js"></script>
+<script src="https://he5050.github.io/media/scripts/lib/jquery.min.js"></script>
+<script src="https://he5050.github.io/media/scripts/lib/jquerymigrate.js"></script>
+<script src="https://he5050.github.io/media/scripts/lib/production.min.js"></script>
+<script src="https://he5050.github.io/media/scripts/lib/calendar.js"></script>
+<script src="https://he5050.github.io/media/scripts/lib/clock.js"></script>
 
   </div>
   <script>
@@ -320,12 +320,18 @@
         }
       };
     };
-    var comment = $(".site-footer").offset().top;
-    var initTop = $(".entry-content").offset().top
-    var toc = $(".toc-card");
 
+    var toc = $(".toc-card");
     if (toc.length > 0) {
+      var initTop = $(".entry-content").offset().top
       toc.css("top", initTop);
+      var navigation = 0;
+      var nav = $(".navigation");
+      if (nav.length > 0) {
+        navigation = $(".navigation").offset().top;
+      } else {
+        navigation = $(".site-footer").offset().top;
+      }
       window.addEventListener(
         "scroll",
         throttle(function () {
@@ -335,12 +341,12 @@
             document.documentElement.scrollTop ||
             document.body.scrollTop;
           if (scrollTop >= initTop + 10) {
-            top = scrollTop;
+            top = scrollTop > navigation ? navigation + toc.height() : scrollTop;
           } else {
-            top = top > comment ? comment - 48 : initTop;
+            top = initTop;
           }
           // 判断是否到底部了
-          console.log(`scrollTop: ${scrollTop}, top: ${top}`);
+          console.log(`comment:${navigation}, scrollTop: ${scrollTop}, top: ${top}`);
           toc.css("top", top);
         }, 50)
       );

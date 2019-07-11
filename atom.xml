@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>E:/360MoveData/Users/Administrator/Documents/Gridea/output</id>
+    <id>https://he5050.github.io</id>
     <title>庵主老衲来也</title>
-    <updated>2019-07-11T03:21:12.756Z</updated>
+    <updated>2019-07-11T03:41:44.160Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="E:/360MoveData/Users/Administrator/Documents/Gridea/output"/>
-    <link rel="self" href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/atom.xml"/>
+    <link rel="alternate" href="https://he5050.github.io"/>
+    <link rel="self" href="https://he5050.github.io/atom.xml"/>
     <subtitle>五年前端三年切图@怡红院
 </subtitle>
-    <logo>E:/360MoveData/Users/Administrator/Documents/Gridea/output/images/avatar.png</logo>
-    <icon>E:/360MoveData/Users/Administrator/Documents/Gridea/output/favicon.ico</icon>
+    <logo>https://he5050.github.io/images/avatar.png</logo>
+    <icon>https://he5050.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 庵主老衲来也</rights>
     <entry>
         <title type="html"><![CDATA[常用库与资源站点收藏]]></title>
-        <id>E:/360MoveData/Users/Administrator/Documents/Gridea/output/post/ce-shi/index.html</id>
-        <link href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/post/ce-shi/index.html">
+        <id>https://he5050.github.io/post/ce-shi</id>
+        <link href="https://he5050.github.io/post/ce-shi">
         </link>
         <updated>2019-07-10T07:43:09.000Z</updated>
         <summary type="html"><![CDATA[<p>平时收集的觉得好用的以及有意思的库与资源网</p>
@@ -404,9 +404,43 @@
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[五年前端三年切图]]></title>
+        <id>https://he5050.github.io/post/ce-shi-nei-rong</id>
+        <link href="https://he5050.github.io/post/ce-shi-nei-rong">
+        </link>
+        <updated>2019-07-09T03:40:15.000Z</updated>
+        <summary type="html"><![CDATA[<p>好记性不如烂笔头，把平时遗落的点记录一下</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>好记性不如烂笔头，把平时遗落的点记录一下</p>
+<!--more-->
+<h1 id="查漏补缺">查漏补缺</h1>
+<h2 id="arrayfrom的妙用">Array.from()的妙用</h2>
+<blockquote>
+<p>可以替代我们Array.map()的另外一种方法,主要注意是Array.from(),可以授受第二个参数</p>
+</blockquote>
+<pre><code class="language-js">const cities = [
+    { name: 'Paris', visited: 'no' },
+    { name: 'Lyon', visited: 'no' },
+    { name: 'Marseille', visited: 'yes' },
+    { name: 'Rome', visited: 'yes' },
+    { name: 'Milan', visited: 'no' },
+    { name: 'Palermo', visited: 'yes' },
+    { name: 'Genoa', visited: 'yes' },
+    { name: 'Berlin', visited: 'no' },
+    { name: 'Hamburg', visited: 'yes' },
+    { name: 'New York', visited: 'yes' }
+];
+
+const cityNames = Array.from(cities, ({ name}) =&gt; name);
+console.log(cityNames);
+// outputs [&quot;Paris&quot;, &quot;Lyon&quot;, &quot;Marseille&quot;, &quot;Rome&quot;, &quot;Milan&quot;, &quot;Palermo&quot;, &quot;Genoa&quot;, &quot;Berlin&quot;, &quot;Hamburg&quot;, &quot;New York&quot;]
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[关于js的位运算]]></title>
-        <id>E:/360MoveData/Users/Administrator/Documents/Gridea/output/post/ce-shi-7/index.html</id>
-        <link href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/post/ce-shi-7/index.html">
+        <id>https://he5050.github.io/post/ce-shi-7</id>
+        <link href="https://he5050.github.io/post/ce-shi-7">
         </link>
         <updated>2019-07-03T02:56:14.000Z</updated>
         <summary type="html"><![CDATA[<p>程序中的所有数在计算机内存中都是以二进制的形式储存的。位运算说穿了，就是直接对整数在内存中的二进制位进行操作。</p>
@@ -604,8 +638,8 @@ console.log(6.83 &gt;&gt;&gt; 0)   // 6
     </entry>
     <entry>
         <title type="html"><![CDATA[常用代码]]></title>
-        <id>E:/360MoveData/Users/Administrator/Documents/Gridea/output/post/ce-shi-3/index.html</id>
-        <link href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/post/ce-shi-3/index.html">
+        <id>https://he5050.github.io/post/ce-shi-3</id>
+        <link href="https://he5050.github.io/post/ce-shi-3">
         </link>
         <updated>2019-07-02T03:43:44.000Z</updated>
         <summary type="html"><![CDATA[<p>主要是针对平时，有使用，而且很有意思的代码进行收集整理</p>
@@ -616,8 +650,8 @@ console.log(6.83 &gt;&gt;&gt; 0)   // 6
     </entry>
     <entry>
         <title type="html"><![CDATA[关于使用puppeteer的screenshot截图乱码]]></title>
-        <id>E:/360MoveData/Users/Administrator/Documents/Gridea/output/post/ce-shi-2/index.html</id>
-        <link href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/post/ce-shi-2/index.html">
+        <id>https://he5050.github.io/post/ce-shi-2</id>
+        <link href="https://he5050.github.io/post/ce-shi-2">
         </link>
         <updated>2019-07-02T03:43:32.000Z</updated>
         <summary type="html"><![CDATA[<p>前一会得空写了一个微信小助手，发现在centos上面发微信发送图片为乱码</p>
@@ -670,8 +704,8 @@ console.log(6.83 &gt;&gt;&gt; 0)   // 6
     </entry>
     <entry>
         <title type="html"><![CDATA[相逢一场 让你失望了]]></title>
-        <id>E:/360MoveData/Users/Administrator/Documents/Gridea/output/post/xiang-feng-yi-chang-rang-ni-shi-wang-liao/index.html</id>
-        <link href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/post/xiang-feng-yi-chang-rang-ni-shi-wang-liao/index.html">
+        <id>https://he5050.github.io/post/xiang-feng-yi-chang-rang-ni-shi-wang-liao</id>
+        <link href="https://he5050.github.io/post/xiang-feng-yi-chang-rang-ni-shi-wang-liao">
         </link>
         <updated>2019-07-01T07:44:47.000Z</updated>
         <summary type="html"><![CDATA[<p>这是一场漫长的一个人的搏斗
@@ -688,40 +722,6 @@ console.log(6.83 &gt;&gt;&gt; 0)   // 6
 离开，
 有时候并不是做错了什么，
 只是不再被需要了。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[五年前端三年切图]]></title>
-        <id>E:/360MoveData/Users/Administrator/Documents/Gridea/output/post/ce-shi-nei-rong/index.html</id>
-        <link href="E:/360MoveData/Users/Administrator/Documents/Gridea/output/post/ce-shi-nei-rong/index.html">
-        </link>
-        <updated>2019-06-27T02:49:35.000Z</updated>
-        <summary type="html"><![CDATA[<p>好记性不如烂笔头，把平时遗落的点记录一下</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>好记性不如烂笔头，把平时遗落的点记录一下</p>
-<!--more-->
-<h1 id="查漏补缺">查漏补缺</h1>
-<h2 id="arrayfrom的妙用">Array.from()的妙用</h2>
-<blockquote>
-<p>可以替代我们Array.map()的另外一种方法,主要注意是Array.from(),可以授受第二个参数</p>
-</blockquote>
-<pre><code class="language-js">const cities = [
-    { name: 'Paris', visited: 'no' },
-    { name: 'Lyon', visited: 'no' },
-    { name: 'Marseille', visited: 'yes' },
-    { name: 'Rome', visited: 'yes' },
-    { name: 'Milan', visited: 'no' },
-    { name: 'Palermo', visited: 'yes' },
-    { name: 'Genoa', visited: 'yes' },
-    { name: 'Berlin', visited: 'no' },
-    { name: 'Hamburg', visited: 'yes' },
-    { name: 'New York', visited: 'yes' }
-];
-
-const cityNames = Array.from(cities, ({ name}) =&gt; name);
-console.log(cityNames);
-// outputs [&quot;Paris&quot;, &quot;Lyon&quot;, &quot;Marseille&quot;, &quot;Rome&quot;, &quot;Milan&quot;, &quot;Palermo&quot;, &quot;Genoa&quot;, &quot;Berlin&quot;, &quot;Hamburg&quot;, &quot;New York&quot;]
-</code></pre>
 ]]></content>
     </entry>
 </feed>
