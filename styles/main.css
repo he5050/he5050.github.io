@@ -107,6 +107,9 @@ body {
 .overflow-container .comments {
   overflow: hidden;
 }
+.comments {
+  display: none;
+}
 @media only screen and (max-width: 1860px) {
   .weather-warp,
   .clock-warp {
