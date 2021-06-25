@@ -1,0 +1,40 @@
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  /* 平滑字体 */
+  -moz-osx-font-smoothing: grayscale;
+  /* 平滑字体 */
+  /* 允许触摸驱动的平移和拖拽缩放 */
+  touch-action: manipulation;
+  /* 允许触摸驱动的平移和拖拽缩放 */
+  -webkit-text-size-adjust: 100%;
+  /* 关闭IOS横屏时，自动调整字体大小的功能 */
+  scroll-behavior: smooth;
+  /* 平滑滚动 */
+  -webkit-overflow-scrolling: touch;
+  /* 允许独立滚动区域，解决IOS上的非body元素滚动条滚动时卡顿 */
+  box-sizing: border-box;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+  -webkit-tap-highlight-color: transparent;
+  /* 覆盖IOS上用户点击连接时的默认高亮颜色 */
+  -webkit-highlight-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+body .page-wrapper.index-page-wrapper {
+  background-color: transparent;
+}
+body .ant-row.main-wrapper {
+  background-color: transparent;
+}
+body .main-container {
+  background-color: transparent;
+}
+body .prev-next-nav {
+  border-top-color: transparent;
+}
+
