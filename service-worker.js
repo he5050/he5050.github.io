@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "e5d6bd88a4151d295e1c373daba54a36"
+    "revision": "69dbcfe1f38336ca277f750dbb5919c3"
   },
   {
     "url": "assets/css/10.styles.b486f9f3.css",
@@ -56,8 +56,16 @@ self.__precacheManifest = [
     "revision": "7a28891b8286a7ed9996d1fc3d6e800b"
   },
   {
+    "url": "assets/css/styles.9fa6d5d8.css",
+    "revision": "7a28891b8286a7ed9996d1fc3d6e800b"
+  },
+  {
     "url": "assets/css/styles.a4398a0e.css",
     "revision": "7a28891b8286a7ed9996d1fc3d6e800b"
+  },
+  {
+    "url": "assets/js/11.40a2574f.js",
+    "revision": "91fb55292280338aaf38315e851cf52b"
   },
   {
     "url": "assets/js/11.9b28fc3f.js",
@@ -68,12 +76,20 @@ self.__precacheManifest = [
     "revision": "5e7a2cf9e635dc494fcba3366b281c01"
   },
   {
+    "url": "assets/js/app.40a2574f.js",
+    "revision": "66544591a84b2f275a1cb3d8291d2f38"
+  },
+  {
     "url": "assets/js/app.57434339.js",
     "revision": "b8247aacd4bafe2e7cd81e3ba281aec2"
   },
   {
     "url": "assets/js/app.9b28fc3f.js",
     "revision": "688fa481df32a36d5110082e4032ab42"
+  },
+  {
+    "url": "assets/js/codes/README.md.40a2574f.js",
+    "revision": "18543570cf84c387544466c950b4e285"
   },
   {
     "url": "assets/js/codes/README.md.57434339.js",
@@ -84,12 +100,20 @@ self.__precacheManifest = [
     "revision": "18543570cf84c387544466c950b4e285"
   },
   {
+    "url": "assets/js/config/README.MD.40a2574f.js",
+    "revision": "56c188a65d59b4a7a34d132bdd1220fd"
+  },
+  {
     "url": "assets/js/config/README.MD.57434339.js",
     "revision": "0f29572df5a1effa11ed8563b37ce35e"
   },
   {
     "url": "assets/js/config/README.MD.9b28fc3f.js",
     "revision": "56c188a65d59b4a7a34d132bdd1220fd"
+  },
+  {
+    "url": "assets/js/notes/2021-06-25.md.40a2574f.js",
+    "revision": "bfceaa35af04c1c93221e8653e063f4d"
   },
   {
     "url": "assets/js/notes/2021-06-25.md.57434339.js",
@@ -100,12 +124,20 @@ self.__precacheManifest = [
     "revision": "bfceaa35af04c1c93221e8653e063f4d"
   },
   {
+    "url": "assets/js/notes/README.md.40a2574f.js",
+    "revision": "c7524a46eb41f0b5ffcb567a3b8f4176"
+  },
+  {
     "url": "assets/js/notes/README.md.57434339.js",
     "revision": "df697c9d43d895bf7fd0270603b67aae"
   },
   {
     "url": "assets/js/notes/README.md.9b28fc3f.js",
     "revision": "936fd024a95d8f186116ccbe8e678ee5"
+  },
+  {
+    "url": "assets/js/notFoundWrapper.40a2574f.js",
+    "revision": "c911a9e8a95c1ec554352b0588d21e53"
   },
   {
     "url": "assets/js/notFoundWrapper.57434339.js",
@@ -116,12 +148,20 @@ self.__precacheManifest = [
     "revision": "c911a9e8a95c1ec554352b0588d21e53"
   },
   {
+    "url": "assets/js/README.MD.40a2574f.js",
+    "revision": "69c54d99fe3473b48d403b6c247f0b0c"
+  },
+  {
     "url": "assets/js/README.MD.57434339.js",
     "revision": "2e7efd30ab92d6afa7d3bc42b1b0d4b9"
   },
   {
     "url": "assets/js/README.MD.9b28fc3f.js",
     "revision": "69c54d99fe3473b48d403b6c247f0b0c"
+  },
+  {
+    "url": "assets/js/tools/animation.md.40a2574f.js",
+    "revision": "3422e93cd055ba8d8c6c332581f9d0c1"
   },
   {
     "url": "assets/js/tools/animation.md.57434339.js",
@@ -132,6 +172,10 @@ self.__precacheManifest = [
     "revision": "3422e93cd055ba8d8c6c332581f9d0c1"
   },
   {
+    "url": "assets/js/tools/react.md.40a2574f.js",
+    "revision": "f0499fc291768ed98314c41c2740ab85"
+  },
+  {
     "url": "assets/js/tools/react.md.57434339.js",
     "revision": "ad2285df18c3f15a5e1f873105899b86"
   },
@@ -140,12 +184,20 @@ self.__precacheManifest = [
     "revision": "f0499fc291768ed98314c41c2740ab85"
   },
   {
+    "url": "assets/js/tools/README.md.40a2574f.js",
+    "revision": "8f484fce2b75886ae12f53a2cbd07400"
+  },
+  {
     "url": "assets/js/tools/README.md.57434339.js",
     "revision": "64f74002a6cb0967835aede7b540eddd"
   },
   {
     "url": "assets/js/tools/README.md.9b28fc3f.js",
     "revision": "8f484fce2b75886ae12f53a2cbd07400"
+  },
+  {
+    "url": "assets/js/vendors~LayoutWrapper.40a2574f.js",
+    "revision": "debdf08eb2494380a750e4cfceb6b860"
   },
   {
     "url": "assets/js/vendors~LayoutWrapper.57434339.js",
@@ -213,7 +265,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "69dbcfe1f38336ca277f750dbb5919c3"
+    "revision": "20e112195ece1d11801f9b12c68a174b"
   },
   {
     "url": "plugins/index.js",
