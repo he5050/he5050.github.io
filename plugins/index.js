@@ -90,7 +90,7 @@
         return {
             l: script_len, //长度，用于生成id用
             z: get_attribute(script, "zIndex", -1), //z-index
-            o: get_attribute(script, "opacity", 0.2), //opacity
+            o: get_attribute(script, "opacity", 0.1), //opacity
             c: get_attribute(script, "color", "0,0,0"), //color
             n: get_attribute(script, "count", 99) //count
         };
