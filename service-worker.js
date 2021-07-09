@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "63e541f7f69e34bd8a59ccd101d0a1c9"
+    "revision": "bfcdb7a14ad7e476652c039bfcba721f"
   },
   {
     "url": "assets/css/10.styles.884e5180.css",
@@ -118,6 +118,10 @@ self.__precacheManifest = [
   {
     "url": "assets/css/styles.13d781d7.css",
     "revision": "7a28891b8286a7ed9996d1fc3d6e800b"
+  },
+  {
+    "url": "assets/css/styles.1a8ca472.css",
+    "revision": "944e4c4c0ee3dca982f8ed60d9e73124"
   },
   {
     "url": "assets/css/styles.34f31a6e.css",
@@ -256,6 +260,10 @@ self.__precacheManifest = [
     "revision": "124f7d5a4f0b46282ee0753ce276a534"
   },
   {
+    "url": "assets/js/15.415ffbd3.js",
+    "revision": "3589abc3479d15c4ef5491c50981349b"
+  },
+  {
     "url": "assets/js/15.6c3cb260.js",
     "revision": "3589abc3479d15c4ef5491c50981349b"
   },
@@ -290,6 +298,10 @@ self.__precacheManifest = [
   {
     "url": "assets/js/app.40a2574f.js",
     "revision": "66544591a84b2f275a1cb3d8291d2f38"
+  },
+  {
+    "url": "assets/js/app.415ffbd3.js",
+    "revision": "2f15be58a5669edbdf42bc0fbf542e12"
   },
   {
     "url": "assets/js/app.4b15b4f7.js",
@@ -368,6 +380,10 @@ self.__precacheManifest = [
     "revision": "18543570cf84c387544466c950b4e285"
   },
   {
+    "url": "assets/js/codes/README.md.415ffbd3.js",
+    "revision": "767e1387778d5e88dc2c20a0a3c155a8"
+  },
+  {
     "url": "assets/js/codes/README.md.4b15b4f7.js",
     "revision": "801d3942539fb5d4ef7f0e9816eceb61"
   },
@@ -444,6 +460,10 @@ self.__precacheManifest = [
     "revision": "56c188a65d59b4a7a34d132bdd1220fd"
   },
   {
+    "url": "assets/js/config/README.MD.415ffbd3.js",
+    "revision": "c3662ccd3e5010f93f8e086a9634f0a8"
+  },
+  {
     "url": "assets/js/config/README.MD.4b15b4f7.js",
     "revision": "cb37d494f04ab6acd5554217757c70dd"
   },
@@ -492,12 +512,20 @@ self.__precacheManifest = [
     "revision": "cb37d494f04ab6acd5554217757c70dd"
   },
   {
+    "url": "assets/js/css/btn.md.415ffbd3.js",
+    "revision": "c215df31d5fe20e876414d853f336823"
+  },
+  {
     "url": "assets/js/css/btn.md.6c3cb260.js",
     "revision": "c215df31d5fe20e876414d853f336823"
   },
   {
     "url": "assets/js/css/README.md.0ad1335f.js",
     "revision": "34b51ee61e7004947834b5c660f1bade"
+  },
+  {
+    "url": "assets/js/css/README.md.415ffbd3.js",
+    "revision": "83e40071a7f46b229f0842793ad7d76a"
   },
   {
     "url": "assets/js/css/README.md.6c3cb260.js",
@@ -510,6 +538,10 @@ self.__precacheManifest = [
   {
     "url": "assets/js/demo/README.MD.0ad1335f.js",
     "revision": "b4dc2dff30129f825f713a852cd39047"
+  },
+  {
+    "url": "assets/js/demo/README.MD.415ffbd3.js",
+    "revision": "41e6f644febce915276e8d4e5b2a0227"
   },
   {
     "url": "assets/js/demo/README.MD.6c3cb260.js",
@@ -546,6 +578,10 @@ self.__precacheManifest = [
   {
     "url": "assets/js/notes/2021-06-25.md.40a2574f.js",
     "revision": "bfceaa35af04c1c93221e8653e063f4d"
+  },
+  {
+    "url": "assets/js/notes/2021-06-25.md.415ffbd3.js",
+    "revision": "0b24984fa776322479ce8419fc285de5"
   },
   {
     "url": "assets/js/notes/2021-06-25.md.4b15b4f7.js",
@@ -624,6 +660,10 @@ self.__precacheManifest = [
     "revision": "c7524a46eb41f0b5ffcb567a3b8f4176"
   },
   {
+    "url": "assets/js/notes/README.md.415ffbd3.js",
+    "revision": "a3de6c6e5891789262f1344ba899d7f3"
+  },
+  {
     "url": "assets/js/notes/README.md.4b15b4f7.js",
     "revision": "c729eb1c5909f1b6503f09f1ff614654"
   },
@@ -698,6 +738,10 @@ self.__precacheManifest = [
   {
     "url": "assets/js/notFoundWrapper.40a2574f.js",
     "revision": "c911a9e8a95c1ec554352b0588d21e53"
+  },
+  {
+    "url": "assets/js/notFoundWrapper.415ffbd3.js",
+    "revision": "97266c88e4c947753688188200f774e8"
   },
   {
     "url": "assets/js/notFoundWrapper.4b15b4f7.js",
@@ -776,6 +820,10 @@ self.__precacheManifest = [
     "revision": "69c54d99fe3473b48d403b6c247f0b0c"
   },
   {
+    "url": "assets/js/README.MD.415ffbd3.js",
+    "revision": "aa515ff0164dc1f2c4c5fb77f84aa392"
+  },
+  {
     "url": "assets/js/README.MD.4b15b4f7.js",
     "revision": "4b2714a7634fae485b25b76d79ca06f9"
   },
@@ -852,6 +900,10 @@ self.__precacheManifest = [
     "revision": "3422e93cd055ba8d8c6c332581f9d0c1"
   },
   {
+    "url": "assets/js/tools/animation.md.415ffbd3.js",
+    "revision": "9973f6845b5a5bcad7d3436a6c6860c9"
+  },
+  {
     "url": "assets/js/tools/animation.md.4b15b4f7.js",
     "revision": "3574bf2e1a05eb75e88ee73199fff170"
   },
@@ -904,6 +956,10 @@ self.__precacheManifest = [
     "revision": "1bf7fbb2994271f154d764db1c43aec1"
   },
   {
+    "url": "assets/js/tools/codes.md.415ffbd3.js",
+    "revision": "3b57af77a5f571b74b8e8ad4ee66f87b"
+  },
+  {
     "url": "assets/js/tools/codes.md.6c3cb260.js",
     "revision": "3b57af77a5f571b74b8e8ad4ee66f87b"
   },
@@ -938,6 +994,10 @@ self.__precacheManifest = [
   {
     "url": "assets/js/tools/react.md.40a2574f.js",
     "revision": "f0499fc291768ed98314c41c2740ab85"
+  },
+  {
+    "url": "assets/js/tools/react.md.415ffbd3.js",
+    "revision": "5d8d755f70c0296277f987b1f5ecb3b0"
   },
   {
     "url": "assets/js/tools/react.md.4b15b4f7.js",
@@ -1016,6 +1076,10 @@ self.__precacheManifest = [
     "revision": "8f484fce2b75886ae12f53a2cbd07400"
   },
   {
+    "url": "assets/js/tools/README.md.415ffbd3.js",
+    "revision": "1959cfe51d3021b87561714c3519b9d6"
+  },
+  {
     "url": "assets/js/tools/README.md.4b15b4f7.js",
     "revision": "b05f10726fc0e86bf3c8b092a57569ef"
   },
@@ -1090,6 +1154,10 @@ self.__precacheManifest = [
   {
     "url": "assets/js/vendors~LayoutWrapper.40a2574f.js",
     "revision": "debdf08eb2494380a750e4cfceb6b860"
+  },
+  {
+    "url": "assets/js/vendors~LayoutWrapper.415ffbd3.js",
+    "revision": "d02e8b871909a16e7bc3d2686e5e1da0"
   },
   {
     "url": "assets/js/vendors~LayoutWrapper.4b15b4f7.js",
@@ -1253,7 +1321,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "bfcdb7a14ad7e476652c039bfcba721f"
+    "revision": "b77a23d3f630e3596a81ff26ad84e5f5"
   },
   {
     "url": "plugins/Images.js",
