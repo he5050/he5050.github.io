@@ -90,9 +90,9 @@
         return {
             l: script_len, //长度，用于生成id用
             z: get_attribute(script, "zIndex", -1), //z-index
-            o: get_attribute(script, "opacity", 0.1), //opacity
-            c: get_attribute(script, "color", "0,0,0"), //color
-            n: get_attribute(script, "count", 99) //count
+            o: get_attribute(script, "opacity", 0.2), //opacity
+            // c: get_attribute(script, "color", ~~(255 * Math.random()) + "," +~~(255 * Math.random())+","+~~(255 * Math.random())), //color
+            n: get_attribute(script, "count", 199) //count
         };
     }
     //设置canvas的高宽
@@ -129,7 +129,7 @@
                         (d = (e.max - dist) / e.max),
                         context.beginPath(),
                         (context.lineWidth = d / 2),
-                        (context.strokeStyle = "rgba(" + config.c + "," + (d + 0.2) + ")"),
+                        (context.strokeStyle = "rgba(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random())  + "," + (d + 0.2) + ")"),
                         context.moveTo(r.x, r.y),
                         context.lineTo(e.x, e.y),
                         context.stroke());
