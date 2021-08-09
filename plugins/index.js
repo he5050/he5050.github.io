@@ -1,7 +1,18 @@
 setTimeout(function () {
+  getAllInit();
+}, 1000);
+
+function getAllInit() {
+  if($){
     init();
     initBg();
-}, 0);
+  } else {
+    setTimeout(function () {
+      getAllInit();
+    }, 1000);
+  }
+
+}
 
 function init() {
     //定义获取词语下标
